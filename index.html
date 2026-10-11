@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="pt-PT">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -256,8 +256,8 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
         <li><a href="#contact" data-i="nav.contact">Contact</a></li>
       </ul>
       <div class="lang" role="group" aria-label="Language / Idioma">
-        <button type="button" id="lang-en" data-lang="en" aria-pressed="true">EN</button>
-        <button type="button" id="lang-pt" data-lang="pt" aria-pressed="false">PT</button>
+        <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
       </div>
     </div>
   </div>
@@ -861,7 +861,7 @@ document.querySelectorAll('.lang button').forEach(function (b) {
 
 var saved = null;
 try { saved = localStorage.getItem('lang'); } catch (e) {}
-if (saved === 'pt') setLang('pt');
+setLang(saved === 'en' ? 'en' : 'pt');
 
 // testimonials: one at a time, arrows to move between them
 (function () {

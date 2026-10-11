@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html lang="en">
+<html lang="pt-PT">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -102,8 +102,8 @@ section h2{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:24px}
   <div class="wrap">
     <a class="back" href="index.html" data-i="back">&larr; Mariana Fonseca</a>
     <div class="lang" role="group" aria-label="Language / Idioma">
-      <button type="button" id="lang-en" data-lang="en" aria-pressed="true">EN</button>
-      <button type="button" id="lang-pt" data-lang="pt" aria-pressed="false">PT</button>
+      <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
     </div>
   </div>
 </nav>
@@ -385,7 +385,7 @@ document.querySelectorAll('.lang button').forEach(function (b) {
 });
 var saved = null;
 try { saved = localStorage.getItem('lang'); } catch (e) {}
-if (saved === 'pt') setLang('pt');
+setLang(saved === 'en' ? 'en' : 'pt');
 </script>
 </body>
 </html>
