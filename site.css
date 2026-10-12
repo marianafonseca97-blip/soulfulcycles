@@ -217,3 +217,19 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
 .logos img.solid{padding:0}
 /* language switch */
 .nav-right{display:flex;align-items:center;gap:22px}
+/* service pages */
+.hero h1.page-title{font-size:clamp(2.6rem,6.5vw,4.8rem)}
+.hero .next-trip{margin-top:18px}
+.trip{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:start}
+.trip h3{font-size:1.5rem;margin-bottom:18px}
+.trip-box{background:var(--surface);border-radius:22px;padding:28px;display:grid;gap:14px}
+.trip-box h3{margin:10px 0 0}
+.trip-box .actions{margin-top:10px}
+.price{font:400 clamp(2.6rem,5vw,3.4rem)/1 var(--display);color:var(--accent)}
+.checklist{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.checklist li{position:relative;padding-left:28px}
+.checklist li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.checklist.no li::before{content:"–";color:var(--muted);font-weight:400}
+.quotes.all{max-width:none;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.quotes.all blockquote{display:grid}
+@media (max-width:760px){.trip{grid-template-columns:1fr;gap:32px}}
