@@ -4,23 +4,6 @@ html{scroll-behavior:smooth}
 img{max-width:100%;display:block}
 h2{font-size:clamp(2rem,4.5vw,3rem)}
 h3{font-size:1.5rem}
-/* nav */
-nav .brand{font-family:var(--display);font-size:1.25rem;text-decoration:none;color:var(--ink)}
-nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.95rem}
-nav ul a{color:var(--muted);text-decoration:none}
-nav ul a:hover{color:var(--accent)}
-.menu-btn{display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:999px;background:none;color:var(--ink);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:0}
-.menu-btn span{display:block;width:16px;height:1.5px;background:currentColor;border-radius:2px;transition:transform .2s,opacity .2s}
-nav.open .menu-btn span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
-nav.open .menu-btn span:nth-child(2){opacity:0}
-nav.open .menu-btn span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
-@media (max-width:760px){
-  .nav-right{gap:12px}
-  .menu-btn{display:flex}
-  nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:6px 20px 14px;font-size:1.05rem}
-  nav.open ul{display:flex}
-  nav ul a{display:block;padding:11px 0;color:var(--ink)}
-}
 section{padding-block:88px;border-bottom:1px solid var(--line)}
 .sec-head{display:grid;gap:14px;margin-bottom:44px;max-width:680px}
 .sec-head.center{margin-inline:auto;text-align:center;justify-items:center}
@@ -216,7 +199,6 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
 .logos img{height:88px;width:auto;background:#fff;border-radius:12px;padding:10px 14px}
 .logos img.solid{padding:0}
 /* language switch */
-.nav-right{display:flex;align-items:center;gap:22px}
 /* service pages */
 .hero h1.page-title{font-size:clamp(2.6rem,6.5vw,4.8rem)}
 .hero .next-trip{margin-top:18px}
@@ -278,3 +260,4 @@ figure.ph.about-photo{margin:6px 0 0;aspect-ratio:3/4}
 @media (prefers-reduced-motion:reduce){.duo-photos .ph img,.duo-photos .ph figcaption{transition:none}}
 .beyond-home{margin-top:48px}
 .hero.solo{grid-template-columns:1fr;padding-block:56px 24px}
+.back-home{padding-block:56px 8px}

@@ -70,10 +70,21 @@ footer.site a{color:inherit}
 
 <nav>
   <div class="wrap">
-    <a class="back" href="/en/" data-i="back">&larr; Mariana Fonseca</a>
-    <div class="lang" role="group" aria-label="Language / Idioma">
-      <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
-      <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+    <a class="brand" href="/en/">&larr; Mariana Fonseca</a>
+    <div class="nav-right">
+      <ul id="nav-menu">
+        <li><a href="/en/about" data-i="nav.about">About</a></li>
+        <li><a href="/en/#work" data-i="nav.work">Services</a></li>
+        <li><a href="/en/#testimonials" data-i="nav.test">Testimonials</a></li>
+        <li><a href="/en/media" data-i="nav.media">Media</a></li>
+        <li><a href="/en/recommendations" data-i="nav.rec">Recommendations</a></li>
+        <li><a href="/en/#contact" data-i="nav.contact">Contact</a></li>
+      </ul>
+      <div class="lang" role="group" aria-label="Language / Idioma">
+        <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button type="button" class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
