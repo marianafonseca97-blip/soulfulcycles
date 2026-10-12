@@ -30,6 +30,7 @@ O site não depende de nenhuma conta do Claude. Se nunca mais mexeres em nada, c
 | Sessões gravadas | /sessoes-gravadas | /en/recorded-sessions |
 | Coleção | /colecao | /en/collection |
 | Sobre mim | /sobre-mim | /en/about |
+| Media (podcast e imprensa) | /media | /en/media |
 | Recomendações | /recomendacoes | /en/recommendations |
 | Política de privacidade | /privacidade | /en/privacy |
 

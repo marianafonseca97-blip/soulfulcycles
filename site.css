@@ -277,3 +277,4 @@ figure.ph.about-photo{margin:6px 0 0;aspect-ratio:3/4}
 .duo-photos .ph:focus{outline:2px solid var(--accent);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){.duo-photos .ph img,.duo-photos .ph figcaption{transition:none}}
 .beyond-home{margin-top:48px}
+.hero.solo{grid-template-columns:1fr;padding-block:56px 24px}

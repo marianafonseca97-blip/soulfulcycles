@@ -25,6 +25,7 @@ from an old translation system: harmless, leave them, they do nothing now.
 | Recorded sessions library | `sessoes-gravadas.html` | `en/recorded-sessions.html` |
 | Clothing collection | `colecao.html` | `en/collection.html` |
 | About | `sobre-mim.html` | `en/about.html` |
+| Media (podcast, press, interviews) | `media.html` | `en/media.html` |
 | Recommendations | `recomendacoes.html` | `en/recommendations.html` |
 | Privacy policy | `privacidade.html` | `en/privacy.html` |
 | Error page (PT only) | `404.html` | — |
