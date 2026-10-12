@@ -242,3 +242,14 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
 .price small.pre{margin:0 6px 0 0}
 .trip-box .checklist + .label{margin-top:22px}
 .about-text.spaced{margin:44px 0}
+/* service cards (homepage) */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{display:grid;grid-template-rows:auto 1fr;background:var(--surface);border-radius:22px;overflow:hidden;text-decoration:none;color:var(--ink);transition:transform .2s}
+.card:hover{transform:translateY(-3px)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card .body{padding:20px 22px 24px;display:grid;gap:8px;align-content:start}
+.card .kind{font:500 .72rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.card h3{font-size:1.4rem}
+.card p:not(.kind){color:var(--muted)}
+.card .more{color:var(--accent);font-weight:600;margin-top:6px}
+.card:hover h3{color:var(--accent)}
