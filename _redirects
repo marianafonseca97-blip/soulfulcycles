@@ -1,3 +1,7 @@
+# Internal guides: not part of the public site
+/AGENTS.md  /404.html  404!
+/CLAUDE.md  /404.html  404!
+/GUIA.md    /404.html  404!
 /recommendations.html  /recomendacoes  301
 /recommendations  /recomendacoes  301
 /recomendacoes  /recomendacoes.html  200
