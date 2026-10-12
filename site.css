@@ -237,3 +237,5 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
 .about-text p{font-size:1.15rem;line-height:1.65}
 .about-text p.strong{font:400 clamp(1.3rem,2.6vw,1.6rem)/1.4 var(--display);color:var(--accent)}
 .trip h3.mt{margin-top:36px}
+.price small{font:400 1rem/1 var(--body);color:var(--muted);margin-left:4px}
+.note{margin-top:28px;padding:18px 22px;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 14px 14px 0;font-size:1.05rem}
