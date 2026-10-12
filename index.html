@@ -293,7 +293,7 @@ button.btn{font:inherit;font-weight:600;cursor:pointer}
 .wl-row input{flex:1 1 220px;width:auto}
 .form-note{font-size:.85rem;color:var(--muted)}
 .form-msg{font-weight:600;color:var(--accent)}
-.contact-form{display:grid;gap:16px;margin-top:64px;max-width:560px}
+.contact-form{display:grid;gap:16px;margin-top:64px;max-width:560px;scroll-margin-top:110px}
 .contact-form h3{font-size:1.6rem}
 .contact-form label{display:grid;gap:6px;font-size:.95rem;color:var(--muted)}
 .contact-form button{justify-self:start}
@@ -346,7 +346,7 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
       <p class="tagline" data-i="hero.tagline">A transformar tabus em <em>conversas</em> e preconceito em <em>conexão</em>.</p>
       <p class="services" data-i="hero.serv">Sessões em escolas, aconselhamento online, viagens e festas feministas. Em Lisboa e online.</p>
       <div class="actions">
-        <a class="btn primary" href="https://ig.me/m/soulfulcycles" target="_blank" rel="noopener" data-i="hero.book">Fala comigo ↗</a>
+        <a class="btn primary" href="#contact-form" data-i="hero.book">Fala comigo</a>
         <a class="btn ghost" href="#work" data-i="hero.work">Ver os meus serviços</a>      </div>
       <a class="press-bar" href="#media"><span data-i="hero.press">Como vista em</span> TVI · NiT · Revista Maria · Notícias ao Minuto</a>
     </div>
@@ -803,7 +803,7 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
       <a href="mailto:marianafonseca.97@gmail.com">marianafonseca.97@gmail.com</a>
       <a href="https://instagram.com/soulfulcycles" target="_blank" rel="noopener">instagram.com/soulfulcycles</a>
     </div>
-    <form class="contact-form" name="contacto" action="https://api.web3forms.com/submit" method="POST" data-web3>
+    <form class="contact-form" id="contact-form" name="contacto" action="https://api.web3forms.com/submit" method="POST" data-web3>
       <h3 data-i="cf.h">Ou escreve-me aqui</h3>
       <input type="hidden" name="access_key" value="e2c2a9ea-7b44-4711-8469-80096a8fe3b9">
       <input type="hidden" name="subject" value="Novo contacto pelo site">
@@ -859,7 +859,7 @@ var EN = {
   "nav.contact":"Contact",
   "hero.label":"Sex educator · <span class=\"nowrap\">Founder of Soulful Cycles</span>",
   "hero.tagline":"Turning taboos into <em>conversations</em> and prejudice into <em>connection</em>.",
-  "hero.book":"Let's talk ↗",
+  "hero.book":"Let's talk",
   "hero.serv":"School sessions, online counselling, trips and feminist parties. In Lisbon and online.",
   "hero.press":"As seen on",
   "trips.nextl":"Next trip", "trips.next":"Dublin · March 2027",
