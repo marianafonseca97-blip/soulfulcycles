@@ -260,8 +260,19 @@ section,.hero{position:relative}
 .press .ts{font:500 .75rem/1 var(--mono);letter-spacing:.06em;color:var(--muted)}
 @media (max-width:760px){.press{grid-template-columns:1fr}}
 
-.beyond{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.beyond{display:grid;gap:28px;max-width:680px}
 .beyond div{display:grid;gap:8px;align-content:start}
+/* faq */
+.faq{max-width:760px;border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font:400 1.3rem/1.3 var(--display)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--accent);font:500 1.4rem/1 var(--body)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{margin-top:12px;max-width:62ch}
+/* next trip */
+.next-trip{font:500 .8rem/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.next-trip b{color:var(--accent);font-weight:500}
 @media (max-width:760px){.beyond{grid-template-columns:1fr}}
 
 /* contact */
@@ -400,6 +411,7 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
           <h3 data-i="trips.h3">Viagens Eróticas, Feministas e Queer</h3>
           <p class="muted" data-i="trips.p">Organizo, faço a curadoria e acompanho viagens em pequenos grupos que exploram uma cidade através da sexualidade, do feminismo e da sua comunidade queer. Cada museu, conversa e experiência é escolhido de acordo com o tema da viagem.</p>
           <div class="tags"><span class="tag" data-i="trips.t1">7 viagens</span><span class="tag" data-i="trips.t2">15 viajantes</span><span class="tag" data-i="trips.t3">5 cidades</span></div>
+          <p class="next-trip"><span data-i="trips.nextl">Próxima viagem</span> <b data-i="trips.next">Dublin · março 2027</b></p>
           <p class="muted" data-i="trips.wa">Junta-te à comunidade das viagens no WhatsApp para teres acesso privilegiado às novas viagens.</p>
           <div class="actions"><a class="btn primary" href="https://chat.whatsapp.com/IEBfphr24VJA9qKf7PhOph" target="_blank" rel="noopener" data-i="trips.wabtn">Entrar no WhatsApp ↗</a></div>
         </div>
@@ -416,8 +428,10 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
           <h3 data-i="hen.h3">Despedidas de Solteira e Festas de Aniversário Feministas</h3>
           <p class="muted" data-i="hen.p">Organizo despedidas de solteira e festas de aniversário feministas. Celebram a pessoa do dia e as suas amizades com atividades sobre prazer, corpos e relações, em vez dos clichés do costume.</p>
           <div class="tags"><span class="tag" data-i="hen.t1">Despedidas de solteira</span><span class="tag" data-i="hen.t3">Festas de aniversário</span><span class="tag" data-i="hen.t2">Feminista</span></div>
-          <p class="muted" data-i="hen.dm">Queres marcar uma? Envia-me mensagem no Instagram.</p>
-          <div class="actions"><a class="btn primary" href="https://ig.me/m/soulfulcycles" target="_blank" rel="noopener" data-i="hen.btn">Enviar mensagem no Instagram ↗</a></div>
+          <p class="muted" data-i="hen.price"><b>Preço:</b> depende do que quiseres incluir. Diz-me o que imaginas e preparo uma proposta à medida.</p>
+          <p class="muted" data-i="hen.dm">Queres marcar uma? Envia-me mensagem no Instagram ou escreve-me aqui no site.</p>
+          <div class="actions"><a class="btn primary" href="https://ig.me/m/soulfulcycles" target="_blank" rel="noopener" data-i="hen.btn">Enviar mensagem no Instagram ↗</a>
+            <a class="btn ghost" href="#contact" data-topic="Festas" data-i="hen.form">Escrever-me aqui</a></div>
         </div>
       </article>
 
@@ -447,8 +461,9 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
           <p class="muted" data-i="ind.p">Sessões online e privadas para esclarecer as tuas dúvidas sobre saúde menstrual e sexual, ao teu ritmo e sem julgamentos. Temas que podemos abordar:</p>
           <div class="tags"><span class="tag" data-i="ind.t1">Funcionamento do ciclo menstrual</span><span class="tag" data-i="ind.t2">Hormonas</span><span class="tag" data-i="ind.t3">Fertilidade</span><span class="tag" data-i="ind.t4">Identidade de género e orientação sexual</span><span class="tag" data-i="ind.t5">Métodos contracetivos</span></div>
           <p class="muted" data-i="ind.price"><b>Preço:</b> a partir de 40 € por sessão.</p>
-          <p class="muted" data-i="ind.dm">Envia-me mensagem no Instagram para marcares a tua sessão.</p>
-          <div class="actions"><a class="btn primary" href="https://ig.me/m/soulfulcycles" target="_blank" rel="noopener" data-i="ind.btn">Marcar no Instagram ↗</a></div>
+          <p class="muted" data-i="ind.dm">Envia-me mensagem no Instagram ou escreve-me aqui no site para marcares a tua sessão.</p>
+          <div class="actions"><a class="btn primary" href="https://ig.me/m/soulfulcycles" target="_blank" rel="noopener" data-i="ind.btn">Marcar no Instagram ↗</a>
+            <a class="btn ghost" href="#contact" data-topic="Aconselhamento online" data-i="ind.form">Escrever-me aqui</a></div>
         </div>
       </article>
 
@@ -762,11 +777,21 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
     <div class="sec-head"><p class="label" data-i="bey.label">Para além do trabalho</p><h2 data-i="bey.h2">Quando não estou a trabalhar</h2></div>
     <div class="beyond">
       <div><h3 data-i="bey.t">A explorar o mundo</h3><p class="muted" data-i="bey.tp">23 países até agora, a conhecer cada lugar através das suas pessoas, da sua cultura e das suas histórias. O próximo está sempre nos planos.</p></div>
-      <div><h3 data-i="bey.m">Séries</h3><p class="muted">Dying for Sex · Sex Education · Heartbreak High · Desenfrenadas · The Bold Type · Friends · Modern Love</p></div>
-      <div><h3 data-i="bey.b">Livros</h3><p class="muted">The Seven Husbands of Evelyn Hugo · Carrie Soto Is Back · Blue Sisters · Cérebro e Género · O Atlas da V</p></div>
-      <div><h3>Podcasts</h3><p class="muted">Terapia de Casal · Palácio da Ajuda · Voz de Cama · Somos Todos Malucos · Os Peixes Têm Memória · Lei da Paridade</p></div>
     </div>
       <div class="actions"><a class="btn ghost" href="recommendations.html" data-i="bey.rec">Ver todas as minhas recomendações &rarr;</a></div>
+  </section>
+
+  <!-- 11. FAQ -->
+  <section id="faq">
+    <div class="sec-head"><p class="label" data-i="faq.label">Perguntas frequentes</p><h2 data-i="faq.h2">Antes de me escreveres</h2></div>
+    <div class="faq">
+      <details><summary data-i="faq.q1">As sessões de aconselhamento são confidenciais?</summary><p class="muted" data-i="faq.a1">Sim. O que partilhas fica entre nós. As sessões são privadas e sem julgamentos, por isso podes perguntar tudo.</p></details>
+      <details><summary data-i="faq.q2">Como funcionam as sessões online?</summary><p class="muted" data-i="faq.a2">São feitas por videochamada, a partir de casa ou de onde te sentires à vontade. Combinamos o dia e a hora por mensagem ou email.</p></details>
+      <details><summary data-i="faq.q3">Com que idades trabalhas nas escolas?</summary><p class="muted" data-i="faq.a3">Adapto cada sessão à idade e ao que a turma precisa, do ensino básico à universidade. Antes da sessão, falo com quem me convida para preparar tudo à medida.</p></details>
+      <details><summary data-i="faq.q4">Posso ir numa viagem sozinha?</summary><p class="muted" data-i="faq.a4">Sim. Os grupos são pequenos, por isso é fácil conhecer as outras pessoas desde o primeiro dia.</p></details>
+      <details><summary data-i="faq.q5">Quanto custa uma despedida de solteira ou festa de aniversário?</summary><p class="muted" data-i="faq.a5">Depende do que quiseres incluir. Conta-me o que imaginas e preparo uma proposta à medida.</p></details>
+      <details><summary data-i="faq.q6">Como tenho acesso à Biblioteca de Sessões Gravadas?</summary><p class="muted" data-i="faq.a6">Envia-me mensagem no Instagram e dou-te acesso. Custa 9,99 € por mês, sem fidelização.</p></details>
+    </div>
   </section>
 
   <!-- 12. Contact -->
@@ -837,6 +862,16 @@ var EN = {
   "hero.book":"Let's talk ↗",
   "hero.serv":"School sessions, online counselling, trips and feminist parties. In Lisbon and online.",
   "hero.press":"As seen on",
+  "trips.nextl":"Next trip", "trips.next":"Dublin · March 2027",
+  "hen.price":"<b>Price:</b> depends on what you'd like to include. Tell me what you have in mind and I'll put together a tailored proposal.",
+  "hen.form":"Write to me here", "ind.form":"Write to me here",
+  "faq.label":"FAQ", "faq.h2":"Before you write to me",
+  "faq.q1":"Are counselling sessions confidential?", "faq.a1":"Yes. What you share stays between us. Sessions are private and judgement-free, so you can ask anything.",
+  "faq.q2":"How do online sessions work?", "faq.a2":"They happen over video call, from home or wherever you feel comfortable. We agree on a day and time by message or email.",
+  "faq.q3":"What ages do you work with in schools?", "faq.a3":"I adapt each session to the age group and to what the class needs, from primary and middle school to university. Before the session, I talk with whoever invites me so everything is tailored.",
+  "faq.q4":"Can I join a trip on my own?", "faq.a4":"Yes. Groups are small, so it's easy to get to know everyone from day one.",
+  "faq.q5":"How much does a hen or birthday party cost?", "faq.a5":"It depends on what you'd like to include. Tell me what you have in mind and I'll put together a tailored proposal.",
+  "faq.q6":"How do I get access to the Recorded Sessions Library?", "faq.a6":"Send me a message on Instagram and I'll give you access. It costs €9.99 per month, with no commitment.",
   "wl.label":"Your email", "wl.btn":"Notify me", "wl.note":"I'll only use your email to let you know when orders open.",
   "cf.h":"Or write to me here", "cf.name":"Name", "cf.email":"Email", "cf.topic":"Subject", "cf.msg":"Message", "cf.btn":"Send message",
   "cf.o1":"School &amp; university sessions", "cf.o2":"Online counselling", "cf.o3":"Trips", "cf.o4":"Hen &amp; birthday parties", "cf.o5":"Trainings", "cf.o6":"Recorded Sessions Library", "cf.o7":"Something else",
@@ -893,7 +928,7 @@ var EN = {
   "hen.t1":"Hen parties",
   "hen.t3":"Birthday parties",
   "hen.t2":"Feminist",
-  "hen.dm":"Want to book one? Send me a message on Instagram.",
+  "hen.dm":"Want to book one? Send me a message on Instagram or write to me here on the site.",
   "hen.btn":"Message me on Instagram ↗",
   "sch.c1":"Materials for a school session",
   "sch.kind":"Education · Schools &amp; universities",
@@ -916,7 +951,7 @@ var EN = {
   "ind.t4":"Gender identity &amp; sexual orientation",
   "ind.t5":"Contraceptive methods",
   "ind.price":"<b>Price:</b> from €40 per session.",
-  "ind.dm":"Send me a message on Instagram to book your session.",
+  "ind.dm":"Send me a message on Instagram or write to me here on the site to book your session.",
   "ind.btn":"Book on Instagram ↗",
   "com.c1":"Young Cycles · 1st anniversary",
   "com.c2":"Community online session",
@@ -1066,6 +1101,11 @@ document.querySelectorAll('.lang button').forEach(function (b) {
 var saved = null;
 try { saved = localStorage.getItem('lang'); } catch (e) {}
 setLang(saved === 'en' ? 'en' : 'pt');
+
+// service buttons that point to the contact form pre-select its subject
+document.querySelectorAll('a[data-topic]').forEach(function (a) {
+  a.addEventListener('click', function () { var s = document.querySelector('.contact-form select'); if (s) s.value = a.dataset.topic; });
+});
 
 // forms: send to Web3Forms (emails Mariana) without leaving the page
 document.querySelectorAll('form[data-web3]').forEach(function (form) {
