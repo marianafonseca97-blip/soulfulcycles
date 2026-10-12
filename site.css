@@ -260,7 +260,7 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
 .legal h2{font-size:1.5rem;margin-top:18px}
 footer.site a{color:inherit}
 .form-note a{color:inherit;text-decoration:underline}
-.duo-photos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:32px;max-width:1080px}
+.duo-photos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:32px;max-width:1080px}
 @media (max-width:900px){.duo-photos{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:560px){.duo-photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .duo-photos .ph{aspect-ratio:3/4;grid-row:auto}
@@ -268,3 +268,12 @@ footer.site a{color:inherit}
 figure.ph.about-photo{margin:6px 0 0;aspect-ratio:3/4}
 .about-photos{display:grid;gap:16px}
 @media (max-width:900px){.about-split{grid-template-columns:1fr}.about-photos{grid-template-columns:repeat(2,minmax(0,1fr));max-width:560px}figure.ph.about-photo{margin-top:8px}}
+/* "A explorar o mundo": caption only on hover / tap, photo blurs behind it */
+.duo-photos .ph{align-items:center;justify-content:center;text-align:center;cursor:default}
+.duo-photos .ph img{transition:filter .35s ease,transform .35s ease}
+.duo-photos .ph figcaption{opacity:0;transform:translateY(6px);transition:opacity .3s ease,transform .3s ease;font-size:.78rem;max-width:85%}
+.duo-photos .ph:hover img,.duo-photos .ph:focus img{filter:blur(6px) brightness(.8);transform:scale(1.06)}
+.duo-photos .ph:hover figcaption,.duo-photos .ph:focus figcaption{opacity:1;transform:none}
+.duo-photos .ph:focus{outline:2px solid var(--accent);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.duo-photos .ph img,.duo-photos .ph figcaption{transition:none}}
+.beyond-home{margin-top:48px}
