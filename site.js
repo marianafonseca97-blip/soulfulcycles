@@ -1,5 +1,5 @@
 // Soulful Cycles: behaviour shared by every page.
-// Each page defines its English text first, in `var EN = {...}`; Portuguese lives in the HTML itself.
+// Portuguese pages live at the site root, English pages under /en/.
 
 // mobile menu (only on pages that have one)
 (function () {
@@ -11,28 +11,27 @@
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setOpen(false); });
 })();
 
-// language switch
-function setLang(lang) {
-  document.querySelectorAll('[data-i]').forEach(function (el) {
-    if (el.dataset.pt === undefined) el.dataset.pt = el.innerHTML;
-    var en = EN[el.dataset.i];
-    el.innerHTML = (lang === 'en' && en !== undefined) ? en : el.dataset.pt;
+// language switch: each page has a Portuguese and an English version (see <link rel="alternate" hreflang>)
+(function () {
+  var current = document.documentElement.lang === 'en' ? 'en' : 'pt';
+  var other = {};
+  document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(function (l) {
+    var lang = l.getAttribute('hreflang') === 'en' ? 'en' : (l.getAttribute('hreflang') === 'pt-PT' ? 'pt' : null);
+    if (lang) other[lang] = new URL(l.getAttribute('href')).pathname;   // same site, any host (also local previews)
   });
-  document.documentElement.lang = lang === 'pt' ? 'pt-PT' : 'en';
-  document.querySelectorAll('.cv-link').forEach(function (a) { a.setAttribute('href', lang === 'pt' ? 'cv.pdf' : 'cv-en.pdf'); });
+  function go(lang) { if (lang !== current && other[lang]) location.href = other[lang] + location.hash; }
   document.querySelectorAll('.lang button').forEach(function (b) {
-    b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    b.setAttribute('aria-pressed', String(b.dataset.lang === current));
+    b.addEventListener('click', function () {
+      try { localStorage.setItem('lang', b.dataset.lang); } catch (e) {}
+      go(b.dataset.lang);
+    });
   });
-  try { localStorage.setItem('lang', lang); } catch (e) {}
-}
-
-document.querySelectorAll('.lang button').forEach(function (b) {
-  b.addEventListener('click', function () { setLang(b.dataset.lang); });
-});
-
-var saved = null;
-try { saved = localStorage.getItem('lang'); } catch (e) {}
-setLang(saved === 'en' ? 'en' : 'pt');
+  // returning visitors who chose English before land on the English version
+  var saved = null;
+  try { saved = localStorage.getItem('lang'); } catch (e) {}
+  if (saved === 'en' && current === 'pt' && other.en) location.replace(other.en + location.hash);
+})();
 
 // service buttons that point to the contact form pre-select its subject
 document.querySelectorAll('a[data-topic]').forEach(function (a) {
