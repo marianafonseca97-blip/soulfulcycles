@@ -253,3 +253,4 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
 .card p:not(.kind){color:var(--muted)}
 .card .more{color:var(--accent);font-weight:600;margin-top:6px}
 .card:hover h3{color:var(--accent)}
+.contact > .label{margin-bottom:16px}
