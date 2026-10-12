@@ -260,10 +260,11 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
 .legal h2{font-size:1.5rem;margin-top:18px}
 footer.site a{color:inherit}
 .form-note a{color:inherit;text-decoration:underline}
-.duo-photos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:32px;max-width:1080px}
+.duo-photos{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:32px;max-width:1080px}
 @media (max-width:900px){.duo-photos{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:560px){.duo-photos{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .duo-photos .ph{aspect-ratio:3/4;grid-row:auto}
 .about-split{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:40px;align-items:start}
 figure.ph.about-photo{margin:6px 0 0;aspect-ratio:3/4}
-@media (max-width:900px){.about-split{grid-template-columns:1fr}figure.ph.about-photo{max-width:320px;margin-top:8px}}
+.about-photos{display:grid;gap:16px}
+@media (max-width:900px){.about-split{grid-template-columns:1fr}.about-photos{grid-template-columns:repeat(2,minmax(0,1fr));max-width:560px}figure.ph.about-photo{margin-top:8px}}
