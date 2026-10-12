@@ -54,7 +54,18 @@ nav .brand{font-family:var(--display);font-size:1.25rem;text-decoration:none;col
 nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.95rem}
 nav ul a{color:var(--muted);text-decoration:none}
 nav ul a:hover{color:var(--accent)}
-@media (max-width:760px){nav ul{display:none}}
+.menu-btn{display:none;width:40px;height:40px;border:1px solid var(--line);border-radius:999px;background:none;color:var(--ink);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:4px;padding:0}
+.menu-btn span{display:block;width:16px;height:1.5px;background:currentColor;border-radius:2px;transition:transform .2s,opacity .2s}
+nav.open .menu-btn span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+nav.open .menu-btn span:nth-child(2){opacity:0}
+nav.open .menu-btn span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+@media (max-width:760px){
+  .nav-right{gap:12px}
+  .menu-btn{display:flex}
+  nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:6px 20px 14px;font-size:1.05rem}
+  nav.open ul{display:flex}
+  nav ul a{display:block;padding:11px 0;color:var(--ink)}
+}
 
 section{padding-block:88px;border-bottom:1px solid var(--line)}
 .sec-head{display:grid;gap:14px;margin-bottom:44px;max-width:680px}
@@ -247,7 +258,7 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
   <div class="wrap">
     <a class="brand" href="#top">Mariana Fonseca</a>
     <div class="nav-right">
-      <ul>
+      <ul id="nav-menu">
         <li><a href="#about" data-i="nav.about">About</a></li>
         <li><a href="#work" data-i="nav.work">Services</a></li>
         <li><a href="#projects" data-i="nav.proj">Projects</a></li>
@@ -259,6 +270,7 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
         <button type="button" id="lang-pt" data-lang="pt" aria-pressed="true">PT</button>
         <button type="button" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
       </div>
+      <button type="button" class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
@@ -717,6 +729,15 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
 </main>
 
 <script>
+// mobile menu
+(function(){
+  var nav=document.querySelector("nav"), btn=nav.querySelector(".menu-btn");
+  function setOpen(o){nav.classList.toggle("open",o);btn.setAttribute("aria-expanded",o)}
+  btn.addEventListener("click",function(){setOpen(!nav.classList.contains("open"))});
+  nav.querySelectorAll("ul a").forEach(function(a){a.addEventListener("click",function(){setOpen(false)})});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape")setOpen(false)});
+})();
+
 // Portuguese (Portugal) translations; English lives in the HTML itself
 var PT = {
   "nav.about":"Sobre mim", "nav.work":"Serviços", "nav.proj":"Projetos", "proj.label":"Projetos", "proj.h2":"Onde a conversa continua", "nav.exp":"Experiência", "nav.test":"Testemunhos", "nav.contact":"Contacto", "nav.rec":"Recomendações",
