@@ -233,3 +233,7 @@ footer.site{padding-block:28px;font:400 .8rem/1.4 var(--mono);color:var(--muted)
 .quotes.all{max-width:none;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
 .quotes.all blockquote{display:grid}
 @media (max-width:760px){.trip{grid-template-columns:1fr;gap:32px}}
+.about-text{display:grid;gap:18px;max-width:62ch}
+.about-text p{font-size:1.15rem;line-height:1.65}
+.about-text p.strong{font:400 clamp(1.3rem,2.6vw,1.6rem)/1.4 var(--display);color:var(--accent)}
+.trip h3.mt{margin-top:36px}
