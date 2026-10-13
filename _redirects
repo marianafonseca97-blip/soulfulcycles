@@ -1,28 +1,11 @@
+# Cloudflare Pages serves /viagens from viagens.html (and /en/trips from en/trips.html) on its own,
+# so only real redirects are listed here.
+
 # Internal guides: not part of the public site
-/AGENTS.md  /404.html  404!
-/CLAUDE.md  /404.html  404!
-/GUIA.md    /404.html  404!
+/AGENTS.md  /  301
+/CLAUDE.md  /  301
+/GUIA.md    /  301
+
+# Old address of the recommendations page
 /recommendations.html  /recomendacoes  301
 /recommendations  /recomendacoes  301
-/recomendacoes  /recomendacoes.html  200
-/viagens  /viagens.html  200
-/despedidas-de-solteira  /despedidas-de-solteira.html  200
-/escolas  /escolas.html  200
-/aconselhamento  /aconselhamento.html  200
-/formacoes  /formacoes.html  200
-/sessoes-gravadas  /sessoes-gravadas.html  200
-/colecao  /colecao.html  200
-/sobre-mim  /sobre-mim.html  200
-/media  /media.html  200
-/privacidade  /privacidade.html  200
-/en/trips  /en/trips.html  200
-/en/hen-parties  /en/hen-parties.html  200
-/en/schools  /en/schools.html  200
-/en/counselling  /en/counselling.html  200
-/en/trainings  /en/trainings.html  200
-/en/recorded-sessions  /en/recorded-sessions.html  200
-/en/collection  /en/collection.html  200
-/en/about  /en/about.html  200
-/en/media  /en/media.html  200
-/en/recommendations  /en/recommendations.html  200
-/en/privacy  /en/privacy.html  200

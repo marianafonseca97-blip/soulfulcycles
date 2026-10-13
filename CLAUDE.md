@@ -3,7 +3,7 @@
 <!-- Same content as AGENTS.md (Claude Code reads CLAUDE.md, other agents read AGENTS.md). Keep both files in sync. -->
 
 Static website of **Mariana Fonseca**, sex educator in Lisbon and founder of **Soulful Cycles**.
-Plain HTML/CSS/JS, **no build step**. Hosted on **Netlify**, deployed automatically from the `main` branch of
+Plain HTML/CSS/JS, **no build step**. Hosted on **Cloudflare Pages**, deployed automatically from the `main` branch of
 GitHub `marianafonseca97-blip/soulfulcycles`. Mariana is not technical and writes in Portuguese (Portugal);
 reply to her in Portuguese, in plain language.
 
@@ -42,13 +42,13 @@ when those cards change.
   `<link rel="alternate" hreflang>` tags in each page's `<head>`), contact form and waitlist (Web3Forms),
   and service buttons that pre-select the form subject (`data-topic`).
   **If you change `site.js`, bump the version in every page:** `site.js?v=2` → `site.js?v=3`.
-- `_redirects` — Netlify rewrites for the clean URLs (`/viagens` → `viagens.html`, `/en/trips` → …) and the
-  301 from the old `recommendations.html`. Add a line for every new page.
+- `_redirects` — real redirects only (old recommendations URL, internal guides). Cloudflare Pages serves clean URLs (`/viagens` → `viagens.html`) by itself, so no rewrite lines are needed.
+  New pages need no `_redirects` line.
 - `sitemap.xml`, `robots.txt` — add every new page (both languages) to the sitemap.
 
 ## Conventions
 
-- **Image file names: lowercase, no spaces** (`foto-dublin.jpg`). Netlify is case-sensitive; mixed case broke images before.
+- **Image file names: lowercase, no spaces** (`foto-dublin.jpg`). The host is case-sensitive; mixed case broke images before.
 - **Images:** JPG, max ~1600 px on the longest side, ideally under ~400 KB. iPhone photos (HEIC) must be converted.
   Gallery images use `loading="lazy" decoding="async"`; the main image at the top of a page does not.
 - **Alt text:** Portuguese in Portuguese pages, English in English pages. Never name a person in an alt text
