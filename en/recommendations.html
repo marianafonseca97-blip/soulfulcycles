@@ -64,6 +64,16 @@ footer.site a{color:inherit}
 .art.r1,.art.r3{right:calc((100% - 100vw) / 2 + 24px);transform:rotate(12deg)}
 .art.r2{left:calc((100% - 100vw) / 2 + 24px);transform:rotate(-12deg)}
 @media (min-width:1400px){.art.r1,.art.r2,.art.r3{display:block}}
+/* phones: covers the same size as the travel photos (3 per row) */
+@media (max-width:560px){
+  .list.covers{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 8px}
+  .list.covers.wide-img{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .list.covers b{font-size:.9rem}
+  .list.covers small{font-size:.6rem;letter-spacing:.04em}
+  .cover{border-radius:10px;margin-bottom:2px}
+  .cover.blank{font-size:.9rem;padding:8px}
+  .code{font-size:.6rem;padding:4px 6px;letter-spacing:.04em}
+}
 </style>
 </head>
 <body>
