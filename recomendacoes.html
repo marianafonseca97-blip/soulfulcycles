@@ -16,7 +16,7 @@
 <meta property="og:title" content="Recomendações · Mariana Fonseca">
 <meta property="og:description" content="Livros, séries, filmes, podcasts e websites sobre sexualidade, relações, feminismo e vidas queer.">
 <meta property="og:url" content="https://soulfulcycles.pt/recomendacoes">
-<meta property="og:image" content="https://soulfulcycles.pt/og-image.jpg">
+<meta property="og:image" content="https://soulfulcycles.pt/og-recomendacoes.jpg">
 <meta property="og:image:width" content="800">
 <meta property="og:image:height" content="800">
 <meta name="twitter:card" content="summary">
@@ -69,11 +69,17 @@ footer.site a{color:inherit}
   .list.covers{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 8px}
   .list.covers.wide-img{grid-template-columns:repeat(2,minmax(0,1fr))}
   .list.covers b{font-size:.9rem}
-  .list.covers small{font-size:.6rem;letter-spacing:.04em}
+  .list.covers small{font-size:.66rem;letter-spacing:.03em}
   .cover{border-radius:10px;margin-bottom:2px}
   .cover.blank{font-size:.9rem;padding:8px}
-  .code{font-size:.6rem;padding:4px 6px;letter-spacing:.04em}
+  .code{font-size:.64rem;padding:4px 6px;letter-spacing:.03em}
 }
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.jump a{font:500 .72rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:var(--surface)}
+.jump a:hover{border-color:var(--accent);color:var(--accent)}
+section[id]{scroll-margin-top:80px}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
@@ -105,9 +111,10 @@ footer.site a{color:inherit}
     <p class="label" data-i="h.label">Recomendações</p>
     <h1 data-i="h.h1">Coisas que adoro e com que aprendo</h1>
     <p class="muted" data-i="h.p">Livros, séries, filmes, documentários, podcasts, vídeos educativos, palestras, websites e produtos que estou sempre a recomendar a amigas, clientes e a quem tenha curiosidade sobre sexualidade, relações, feminismo e vidas queer.</p>
+    <div class="jump" role="navigation" aria-label="Ir para a secção"><a href="#livros">Livros</a><a href="#criancas">Crianças</a><a href="#series">Séries</a><a href="#filmes">Filmes</a><a href="#documentarios">Documentários</a><a href="#podcasts">Podcasts</a><a href="#videos">Vídeos</a><a href="#websites">Websites</a><a href="#produtos">Produtos</a></div>
   </header>
 
-  <section>
+  <section id="livros">
     <span class="art clit r2" aria-hidden="true"></span>
     <h2 data-i="b.h">Livros</h2>
     <ul class="list covers">
@@ -126,7 +133,7 @@ footer.site a{color:inherit}
     </ul>
   </section>
 
-  <section>
+  <section id="criancas">
     <span class="art clit r1" aria-hidden="true"></span>
     <h2 data-i="t.h">Para crianças e adolescentes</h2>
     <p class="muted sec-note" data-i="t.p">Livros e jogos claros e ilustrados sobre o corpo, o período, o consentimento, a identidade e as relações.</p>
@@ -147,7 +154,7 @@ footer.site a{color:inherit}
     </ul>
   </section>
 
-  <section>
+  <section id="series">
     <span class="art vulva r3" aria-hidden="true"></span>
     <h2 data-i="s.h">Séries</h2>
     <ul class="list covers">
@@ -189,7 +196,7 @@ footer.site a{color:inherit}
     </ul>
   </section>
 
-  <section>
+  <section id="filmes">
     <span class="art vulva r2" aria-hidden="true"></span>
     <h2 data-i="f.h">Filmes</h2>
     <ul class="list covers">
@@ -206,7 +213,7 @@ footer.site a{color:inherit}
     </ul>
   </section>
 
-  <section>
+  <section id="documentarios">
     <span class="art clit r3" aria-hidden="true"></span>
     <h2 data-i="d.h">Documentários</h2>
     <ul class="list covers">
@@ -222,7 +229,7 @@ footer.site a{color:inherit}
     </ul>
   </section>
 
-  <section>
+  <section id="podcasts">
     <span class="art clit r1" aria-hidden="true"></span>
     <h2>Podcasts</h2>
     <ul class="list covers square">
@@ -238,7 +245,7 @@ footer.site a{color:inherit}
 
 
 
-  <section>
+  <section id="videos">
     <span class="art clit r2" aria-hidden="true"></span>
     <h2 data-i="ev.h">Vídeos educativos e palestras</h2>
     <ul class="list covers">
@@ -256,7 +263,7 @@ footer.site a{color:inherit}
     </ul>
   </section>
 
-  <section>
+  <section id="websites">
     <span class="art vulva r1" aria-hidden="true"></span>
     <h2>Websites</h2>
     <ul class="list covers wide-img">
@@ -277,7 +284,7 @@ footer.site a{color:inherit}
     </ul>
   </section>
 
-  <section>
+  <section id="produtos">
     <span class="art vulva r1" aria-hidden="true"></span>
     <h2 data-i="p.h">Produtos</h2>
     <p class="muted sec-note" data-i="p.note">Alguns têm desconto com o meu código, indicado no cartão.</p>

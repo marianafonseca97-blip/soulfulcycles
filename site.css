@@ -265,7 +265,7 @@ figure.ph.about-photo{margin:6px 0 0;aspect-ratio:3/4}
 /* phones and tablets (no mouse): travel captions always visible, no blur */
 @media (hover:none){
   .duo-photos .ph{align-items:flex-end;justify-content:flex-start;text-align:left;padding:6px}
-  .duo-photos .ph figcaption{opacity:1;transform:none;font-size:.6rem;line-height:1.25;padding:4px 7px;border-radius:8px;max-width:100%}
+  .duo-photos .ph figcaption{opacity:1;transform:none;font-size:.64rem;line-height:1.25;padding:4px 7px;border-radius:8px;max-width:100%}
   .duo-photos .ph:hover img,.duo-photos .ph:focus img{filter:none;transform:none}
   .duo-photos .ph:focus{outline:none}
 }
