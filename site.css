@@ -313,3 +313,10 @@ figure.ph.about-photo{margin:6px 0 0;aspect-ratio:3/4}
 .tb-cta{font-weight:600;white-space:nowrap;border:1.5px solid currentColor;border-radius:999px;padding:10px 18px}
 @media (max-width:760px){.trip-banner{grid-template-columns:1fr;padding:20px 22px;margin:-24px 0 56px}.tb-main b{font-size:1.4rem}.tb-cta{justify-self:center;margin-top:6px}.tb-label{text-align:center}}
 section[id]{scroll-margin-top:72px}
+/* Trips: destination pills above the gallery */
+.city-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.city-tabs[hidden]{display:none}
+.city-tabs button{font:500 .78rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:10px 15px;background:var(--surface);cursor:pointer}
+.city-tabs button:hover{border-color:var(--accent);color:var(--accent)}
+.city-tabs button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.city-tabs button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
