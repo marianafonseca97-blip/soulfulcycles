@@ -283,3 +283,23 @@ figure.ph.about-photo{margin:6px 0 0;aspect-ratio:3/4}
 @media (max-width:760px){.calls{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .calls .ph:first-child{grid-row:auto}
 @media (max-width:760px){.tags{gap:7px;margin-top:12px}.tag{font-size:.72rem;padding:8px 11px}}
+/* Homepage services: expandable list */
+.svc-list{border-top:1px solid var(--line)}
+.svc{border-bottom:1px solid var(--line)}
+.svc summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:1fr auto;grid-template-areas:"kind arrow" "title arrow";align-items:center;column-gap:20px;row-gap:6px;padding:22px 4px}
+.svc summary::-webkit-details-marker{display:none}
+.svc summary .kind{grid-area:kind;font:500 .72rem/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.svc summary h3{grid-area:title;font-size:1.5rem;transition:color .2s}
+.svc summary:hover h3,.svc[open] summary h3{color:var(--accent)}
+.svc-arrow{grid-area:arrow;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:transform .25s,background .2s,border-color .2s}
+.svc-arrow::before{content:"";width:9px;height:9px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:translateY(-2px) rotate(45deg)}
+.svc summary:hover .svc-arrow{border-color:var(--accent)}
+.svc[open] .svc-arrow{transform:rotate(180deg)}
+.svc summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:8px}
+.svc-body{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:24px;align-items:center;padding:0 4px 26px}
+.svc-img img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px;display:block}
+.svc-text{display:grid;gap:12px;align-content:center}
+.svc-text p{color:var(--muted);max-width:52ch}
+.svc-text .more{color:var(--accent);font-weight:600;text-decoration:none}
+.svc-text .more:hover{text-decoration:underline}
+@media (max-width:760px){.svc summary h3{font-size:1.2rem}.svc-arrow{width:36px;height:36px}.svc-body{grid-template-columns:1fr;gap:14px}}
