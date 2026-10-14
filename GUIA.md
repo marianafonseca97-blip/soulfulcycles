@@ -1,6 +1,6 @@
 # Guia do site soulfulcycles.pt
 
-Este guia explica como está organizado o teu site e como o podes alterar sozinha, com o agente da Netlify ou com o Claude.
+Este guia explica como está organizado o teu site e como o podes alterar sozinha, diretamente no GitHub ou com a ajuda do Claude.
 
 ---
 
@@ -9,9 +9,9 @@ Este guia explica como está organizado o teu site e como o podes alterar sozinh
 | O quê | Onde | Para que serve |
 |---|---|---|
 | **Código do site** | GitHub: github.com/marianafonseca97-blip/soulfulcycles | Guarda todos os ficheiros e o histórico de alterações |
-| **Site publicado** | Netlify | Publica o site sozinha sempre que o GitHub muda (demora cerca de 1 minuto) |
+| **Site publicado** | Cloudflare Pages (conta marianafonseca.97@gmail.com) | Publica o site sozinha sempre que o GitHub muda (demora cerca de 1 minuto). Gratuito e sem limite de visitas |
 | **Cópia no teu Mac** | Pasta **Documentos/soulfulcycles** | Usada pelo Claude Code quando trabalha no teu computador |
-| **Domínio** | Dominios.pt | O endereço soulfulcycles.pt |
+| **Domínio** | Dominios.pt (registo e renovação anual) + Cloudflare (para onde aponta) | O endereço soulfulcycles.pt |
 
 O site não depende de nenhuma conta do Claude. Se nunca mais mexeres em nada, continua a funcionar.
 
@@ -51,19 +51,20 @@ O site não depende de nenhuma conta do Claude. Se nunca mais mexeres em nada, c
 
 ---
 
-## 3. Fazer alterações com o agente da Netlify (o mais fácil)
+## 3. Fazer alterações com um assistente de IA (Claude ou outro)
 
-1. Entra na Netlify, abre o teu site e escolhe a opção de agentes (Agent Runners), com o Claude.
-2. Escreve o pedido. **Começa sempre por:**
+Qualquer assistente que consiga mexer no repositório do GitHub (por exemplo o Claude Code, ver ponto 8) pode fazer alterações por ti.
+
+1. Escreve o pedido. **Começa sempre por:**
    > *"Lê primeiro o ficheiro AGENTS.md. Faz a alteração em português e em inglês."*
-3. Revê a **pré-visualização** que o agente te mostra.
-4. Se estiver bem, aprova e publica.
+2. Pede para ver como fica antes de publicar.
+3. Se estiver bem, pede para publicar. **Junta várias alterações e publica de uma vez.**
 
 ### Exemplos de pedidos
 
 - *"Lê o AGENTS.md. Muda a data da próxima viagem para Dublin, 15 a 20 de março de 2027, em todas as páginas onde aparece, em português e em inglês."*
 - *"Lê o AGENTS.md. Acrescenta este testemunho à página das escolas, em português e em inglês, como 'Estudante · Sessão numa escola': [texto]."*
-- *"Lê o AGENTS.md. Na página das despedidas, troca a imagem principal pela fotografia [nome-do-ficheiro.jpg]."*
+- *"Lê o AGENTS.md. Na página das celebrações, troca a imagem principal pela fotografia [nome-do-ficheiro.jpg]."*
 - *"Lê o AGENTS.md. O preço das sessões de aconselhamento passa a ser a partir de 45 €. Muda em todas as páginas onde aparece."*
 
 ---
@@ -106,7 +107,8 @@ Para acrescentar uma fotografia sem agente: no GitHub, clica em **Add file → U
 
 | Serviço | Para quê | Onde entrar |
 |---|---|---|
-| **Netlify** | Publica o site | app.netlify.com |
+| **Cloudflare** | Publica o site e gere para onde aponta o domínio | dash.cloudflare.com |
+| **Dominios.pt** | Registo do domínio (renovação anual) | dominios.pt |
 | **GitHub** | Guarda o código | github.com |
 | **Web3Forms** | Envia para o teu email as mensagens do formulário e da lista de espera | web3forms.com |
 | **GoatCounter** | Estatísticas de visitas, sem cookies | marianafonseca.goatcounter.com |
@@ -119,7 +121,7 @@ Se um dia acrescentares uma ferramenta nova que recolha dados (por exemplo uma n
 ## 8. Se voltares a usar o Claude Code no teu Mac
 
 1. Abre o Claude Code e escolhe a pasta **Documentos/soulfulcycles**.
-2. **Antes de qualquer alteração**, pede: *"Atualiza a pasta com a versão mais recente do GitHub (git pull)."* Isto é importante se tiveres feito alterações pela Netlify ou pelo GitHub entretanto.
+2. **Antes de qualquer alteração**, pede: *"Atualiza a pasta com a versão mais recente do GitHub (git pull)."* Isto é importante se tiveres feito alterações pelo GitHub entretanto.
 3. O Claude lê sozinho o ficheiro `CLAUDE.md`, que explica como o site está organizado.
 4. No fim, pede-lhe para publicar (git push).
 
