@@ -82,6 +82,9 @@ document.querySelectorAll('form[data-web3]').forEach(function (form) {
   var list = [], i = 0, last = null;
 
   function visible(img) { return !img.closest('figure').hidden; }
+  big.addEventListener('load', function () {
+    if (big.naturalWidth >= big.naturalHeight) box.querySelector('.lb-panel').style.width = '';
+  });
   function show() {
     var img = list[i], fc = img.closest('figure').querySelector('figcaption');
     big.src = img.currentSrc || img.src; big.alt = img.alt;
@@ -99,10 +102,11 @@ document.querySelectorAll('form[data-web3]').forEach(function (form) {
   // Galleries with only portrait photos: a narrower window that hugs the photos
   function fit() {
     var panel = box.querySelector('.lb-panel');
-    var ratios = list.map(function (im) { return im.naturalWidth && im.naturalHeight ? im.naturalWidth / im.naturalHeight : 1; });
-    var portrait = ratios.every(function (r) { return r < 1; });
+    // photos further along the gallery may not have loaded yet: judge by the ones that have
+    var ratios = list.filter(function (im) { return im.naturalWidth; }).map(function (im) { return im.naturalWidth / im.naturalHeight; });
+    var portrait = ratios.length && ratios.every(function (r) { return r < 1; });
     if (!portrait) { panel.style.width = ''; return; }
-    var r = Math.max.apply(null, ratios);
+    var r = Math.max(Math.max.apply(null, ratios), .75);
     var small = window.innerWidth <= 760;
     var h = Math.min(window.innerHeight * (small ? .78 : .82), small ? 700 : 820) - (small ? 110 : 120);
     var side = small ? 84 : 132;
