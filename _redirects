@@ -9,3 +9,9 @@
 # Old address of the recommendations page
 /recommendations.html  /recomendacoes  301
 /recommendations  /recomendacoes  301
+
+# Old address of the celebrations page
+/despedidas-de-solteira  /celebracoes  301
+/despedidas-de-solteira.html  /celebracoes  301
+/en/hen-parties  /en/celebrations  301
+/en/hen-parties.html  /en/celebrations  301

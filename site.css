@@ -269,3 +269,8 @@ figure.ph.about-photo{margin:6px 0 0;aspect-ratio:3/4}
   .duo-photos .ph:hover img,.duo-photos .ph:focus img{filter:none;transform:none}
   .duo-photos .ph:focus{outline:none}
 }
+/* shorter header (About page) */
+.hero.compact{padding-block:40px 32px;grid-template-columns:1fr auto}
+.hero.compact .portrait{max-width:260px}
+.hero.compact + section{padding-top:56px}
+@media (max-width:760px){.hero.compact{grid-template-columns:1fr;gap:20px;padding-block:28px 8px}.hero.compact .portrait{max-width:160px;order:-1}}

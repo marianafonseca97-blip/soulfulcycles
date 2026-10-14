@@ -18,7 +18,7 @@ from an old translation system: harmless, leave them, they do nothing now.
 |---|---|---|
 | Homepage | `index.html` → `/` | `en/index.html` → `/en/` |
 | Trips | `viagens.html` → `/viagens` | `en/trips.html` → `/en/trips` |
-| Hen & birthday parties | `despedidas-de-solteira.html` | `en/hen-parties.html` |
+| Hen parties, birthdays & other celebrations | `celebracoes.html` | `en/celebrations.html` |
 | Schools & universities | `escolas.html` | `en/schools.html` |
 | Online counselling | `aconselhamento.html` | `en/counselling.html` |
 | Trainings | `formacoes.html` | `en/trainings.html` |

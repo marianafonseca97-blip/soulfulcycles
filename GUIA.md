@@ -23,7 +23,7 @@ O site não depende de nenhuma conta do Claude. Se nunca mais mexeres em nada, c
 |---|---|---|
 | Página inicial | soulfulcycles.pt | soulfulcycles.pt/en/ |
 | Viagens | /viagens | /en/trips |
-| Despedidas e aniversários | /despedidas-de-solteira | /en/hen-parties |
+| Despedidas, aniversários e celebrações | /celebracoes | /en/celebrations |
 | Escolas e faculdades | /escolas | /en/schools |
 | Aconselhamento | /aconselhamento | /en/counselling |
 | Formações | /formacoes | /en/trainings |
