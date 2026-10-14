@@ -71,11 +71,12 @@ document.querySelectorAll('form[data-web3]').forEach(function (form) {
   var box = document.createElement('div');
   box.className = 'lb'; box.hidden = true;
   box.setAttribute('role', 'dialog'); box.setAttribute('aria-modal', 'true');
-  box.innerHTML = '<button type="button" class="lb-close" aria-label="' + (en ? 'Close' : 'Fechar') + '">×</button>' +
+  box.innerHTML = '<div class="lb-panel">' +
+    '<button type="button" class="lb-close" aria-label="' + (en ? 'Close' : 'Fechar') + '">×</button>' +
     '<button type="button" class="lb-prev" aria-label="' + (en ? 'Previous photo' : 'Foto anterior') + '">‹</button>' +
     '<figure class="lb-fig"><img alt=""><figcaption></figcaption></figure>' +
     '<button type="button" class="lb-next" aria-label="' + (en ? 'Next photo' : 'Foto seguinte') + '">›</button>' +
-    '<p class="lb-count"></p>';
+    '<p class="lb-count"></p></div>';
   document.body.appendChild(box);
   var big = box.querySelector('img'), cap = box.querySelector('figcaption'), count = box.querySelector('.lb-count');
   var list = [], i = 0, last = null;
