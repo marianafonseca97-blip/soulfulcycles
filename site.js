@@ -93,8 +93,20 @@ document.querySelectorAll('form[data-web3]').forEach(function (form) {
     var group = img.closest('.gallery, .calls, .duo-photos');
     list = [].slice.call(group.querySelectorAll('figure.ph img')).filter(visible);
     i = list.indexOf(img); last = document.activeElement;
-    show(); box.hidden = false; document.body.classList.add('lb-on');
+    fit(); show(); box.hidden = false; document.body.classList.add('lb-on');
     box.querySelector('.lb-close').focus();
+  }
+  // Galleries with only portrait photos: a narrower window that hugs the photos
+  function fit() {
+    var panel = box.querySelector('.lb-panel');
+    var ratios = list.map(function (im) { return im.naturalWidth && im.naturalHeight ? im.naturalWidth / im.naturalHeight : 1; });
+    var portrait = ratios.every(function (r) { return r < 1; });
+    if (!portrait) { panel.style.width = ''; return; }
+    var r = Math.max.apply(null, ratios);
+    var small = window.innerWidth <= 760;
+    var h = Math.min(window.innerHeight * (small ? .78 : .82), small ? 700 : 820) - (small ? 110 : 120);
+    var side = small ? 84 : 132;
+    panel.style.width = Math.min(Math.round(h * r + side), window.innerWidth - (small ? 24 : 40), 900) + 'px';
   }
   function close() { box.hidden = true; document.body.classList.remove('lb-on'); big.src = ''; if (last) last.focus(); }
   function go(d) { i = (i + d + list.length) % list.length; show(); }
