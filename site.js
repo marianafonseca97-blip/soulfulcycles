@@ -108,9 +108,9 @@ document.querySelectorAll('form[data-web3]').forEach(function (form) {
     if (!portrait) { panel.style.width = ''; return; }
     var r = Math.max(Math.max.apply(null, ratios), .75);
     var small = window.innerWidth <= 760;
-    var h = Math.min(window.innerHeight * (small ? .78 : .82), small ? 700 : 820) - (small ? 110 : 120);
+    var h = Math.min(window.innerHeight * (small ? .86 : .92), small ? 800 : 1000) - (small ? 100 : 64);
     var side = small ? 84 : 132;
-    panel.style.width = Math.min(Math.round(h * r + side), window.innerWidth - (small ? 24 : 40), 900) + 'px';
+    panel.style.width = Math.min(Math.round(h * r + side), window.innerWidth - (small ? 24 : 40), 1000) + 'px';
   }
   function close() { box.hidden = true; document.body.classList.remove('lb-on'); big.src = ''; if (last) last.focus(); }
   function go(d) { i = (i + d + list.length) % list.length; show(); }
