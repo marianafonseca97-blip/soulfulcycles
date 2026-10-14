@@ -46,7 +46,7 @@ O site não depende de nenhuma conta do Claude. Se nunca mais mexeres em nada, c
 | Preço das escolas (40 €/hora, mínimo 1h30) | Escolas (PT e EN), cartão na página inicial (PT e EN), página de erro |
 | Preço do aconselhamento (a partir de 40 €) | Aconselhamento (PT e EN), cartão na página inicial (PT e EN), página de erro |
 | Próxima viagem (Dublin, março 2027, 375 €) | Viagens (PT e EN), cartão na página inicial (PT e EN), página de erro |
-| Preço da biblioteca (9,99 €/mês) | Sessões gravadas (PT e EN), cartão e perguntas frequentes da página inicial (PT e EN), página de erro |
+| Preço da biblioteca (10 €/mês) | Sessões gravadas (PT e EN), cartão e perguntas frequentes da página inicial (PT e EN), página de erro |
 | Email e Instagram | Secção de contacto de quase todas as páginas |
 
 ---

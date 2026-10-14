@@ -73,7 +73,7 @@ when those cards change.
     from primary school to university, anonymous form for students' questions.
   - Counselling: online, individuals or couples, 1h–1h30, from €40 per session, packages available.
   - Next trip: Dublin, March 2027, €375 (min. 3, max. 6 people; flights ~€170 and accommodation ~€140 not included).
-  - Recorded sessions library: €9.99/month, no commitment.
+  - Recorded sessions library: €10/month, no commitment.
   - Clothing: second-hand pieces, each one unique; orders open from time to time (waitlist).
   - Contact: marianafonseca.97@gmail.com · Instagram @soulfulcycles · trips WhatsApp group.
 
