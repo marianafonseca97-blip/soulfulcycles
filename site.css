@@ -274,4 +274,4 @@ figure.ph.about-photo{margin:6px 0 0;aspect-ratio:3/4}
 .hero.compact .portrait{max-width:260px}
 .hero.compact + section{padding-top:56px}
 @media (max-width:760px){.hero.compact{grid-template-columns:1fr;gap:20px;padding-block:28px 8px}.hero.compact .portrait{max-width:160px;order:-1}}
-@media (min-width:761px){.hero.compact .portrait{margin-right:clamp(0px,8vw,120px)}}
+@media (min-width:761px){.hero.compact .portrait{margin-right:clamp(0px,6vw,80px)}.hero.compact > div{padding-left:clamp(0px,6vw,80px)}.hero.compact h1.page-title{font-size:clamp(2.6rem,5vw,4.2rem)}}
