@@ -42,6 +42,8 @@ when those cards change.
   `<link rel="alternate" hreflang>` tags in each page's `<head>`), contact form and waitlist (Web3Forms),
   and service buttons that pre-select the form subject (`data-topic`).
   **If you change `site.js`, bump the version in every page:** `site.js?v=2` → `site.js?v=3`.
+  Same for `site.css` (`site.css?v=2` → `?v=3`): the host caches CSS for 4 hours, so without a new version
+  visitors (and Mariana) keep seeing the old styles.
 - `_redirects` — real redirects only (old recommendations URL, internal guides). Cloudflare Pages serves clean URLs (`/viagens` → `viagens.html`) by itself, so no rewrite lines are needed.
   New pages need no `_redirects` line.
 - `sitemap.xml`, `robots.txt` — add every new page (both languages) to the sitemap.
