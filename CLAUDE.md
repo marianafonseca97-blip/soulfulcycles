@@ -28,6 +28,7 @@ from an old translation system: harmless, leave them, they do nothing now.
 | Podcast & interviews (podcast, press, interviews) | `podcast-e-entrevistas.html` | `en/podcast-and-interviews.html` |
 | Recommendations | `recomendacoes.html` | `en/recommendations.html` |
 | Privacy policy | `privacidade.html` | `en/privacy.html` |
+| Subscription terms | `termos.html` | `en/terms.html` |
 | Error page (PT only) | `404.html` | — |
 
 `404.html` contains a **copy of the homepage service cards** (with prices and the next trip). Update it too

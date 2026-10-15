@@ -337,3 +337,4 @@ figure.zoomable{cursor:zoom-in}
 .lb.single .lb-prev,.lb.single .lb-next,.lb.single .lb-count{visibility:hidden}
 @media (max-width:760px){.lb{padding:12px}.lb-fig img{max-height:calc(min(84vh,760px) - 96px);max-height:calc(min(84dvh,760px) - 96px)}.lb-panel{height:min(84vh,760px);height:min(84dvh,760px);grid-template-columns:40px minmax(0,1fr) 40px;padding:46px 2px 12px;border-radius:18px}.lb button{width:34px;height:34px;font-size:1.5rem}.lb-count{left:16px;width:auto;top:18px}}
 .alt-link{margin-top:10px;font-size:.88rem}.alt-link a{color:var(--muted)}.alt-link a:hover{color:var(--accent)}
+.alt-link+.alt-link{margin-top:4px}
