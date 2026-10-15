@@ -183,7 +183,7 @@ input,select,textarea{font:inherit;font-size:1rem;color:var(--ink);background:va
 input:focus,select:focus,textarea:focus{outline:none;border-color:var(--accent)}
 textarea{resize:vertical}
 button.btn{font:inherit;font-weight:600;cursor:pointer}
-.waitlist{display:grid;gap:8px;max-width:520px}
+.waitlist{display:grid;gap:8px;max-width:520px;margin-top:26px}
 .wl-row{display:flex;flex-wrap:wrap;gap:10px}
 .wl-row input{flex:1 1 220px;width:auto}
 .form-note{font-size:.85rem;color:var(--muted)}
