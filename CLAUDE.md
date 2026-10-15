@@ -82,6 +82,7 @@ when those cards change.
 ## Services connected to the site
 
 - **Web3Forms** — contact form and clothing waitlist send emails to Mariana. The access key in the HTML is public by design.
+- **Stripe** — payment link for the Recorded Sessions Library subscription (€10/month); Mariana shares the Google Drive folder with the buyer's Google email within 48h.
 - **GoatCounter** — cookie-free visitor statistics (`marianafonseca.goatcounter.com`).
 - **Google Search Console** — verified via meta tag in `index.html`.
 - If a new tool collects data or is loaded from another site, update `privacidade.html` **and** `en/privacy.html`.
