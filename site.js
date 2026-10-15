@@ -108,7 +108,7 @@ document.querySelectorAll('form[data-web3]').forEach(function (form) {
     if (!portrait) { panel.style.width = ''; return; }
     var r = Math.max(Math.max.apply(null, ratios), .75);
     var small = window.innerWidth <= 760;
-    var h = Math.min(window.innerHeight * (small ? .86 : .92), small ? 800 : 1000) - (small ? 100 : 64);
+    var h = Math.min(window.innerHeight * (small ? .84 : .87), small ? 760 : 900) - 96;
     var side = small ? 84 : 132;
     panel.style.width = Math.min(Math.round(h * r + side), window.innerWidth - (small ? 24 : 40), 1000) + 'px';
   }
