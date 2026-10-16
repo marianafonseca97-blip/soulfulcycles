@@ -33,7 +33,7 @@ O site não depende de nenhuma conta do Claude. Se nunca mais mexeres em nada, c
 | Podcast e entrevistas | /podcast-e-entrevistas | /en/podcast-and-interviews |
 | Recomendações | /recomendacoes | /en/recommendations |
 | Política de privacidade | /privacidade | /en/privacy |
-| Termos e condições da subscrição | /termos | /en/terms |
+| Termos e condições (marcação, pagamento e cancelamento de todos os serviços) | /termos | /en/terms |
 
 > ⚠️ **O mais importante:** cada texto existe **duas vezes**, uma em português e outra em inglês.
 > Quando mudares alguma coisa (um preço, uma data, uma fotografia), lembra-te da versão inglesa.

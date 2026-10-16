@@ -28,7 +28,7 @@ from an old translation system: harmless, leave them, they do nothing now.
 | Podcast & interviews (podcast, press, interviews) | `podcast-e-entrevistas.html` | `en/podcast-and-interviews.html` |
 | Recommendations | `recomendacoes.html` | `en/recommendations.html` |
 | Privacy policy | `privacidade.html` | `en/privacy.html` |
-| Subscription terms | `termos.html` | `en/terms.html` |
+| Terms and conditions (all services: booking, payment, cancellation) | `termos.html` | `en/terms.html` |
 | Error page (PT only) | `404.html` | — |
 
 `404.html` contains a **copy of the homepage service cards** (with prices and the next trip). Update it too
@@ -78,6 +78,10 @@ when those cards change.
   - Next trip: Dublin, March 2027, 4 days, exact dates set together with the group, €150 deposit to secure a spot, refunded if the trip does not go ahead, €375 (min. 3, max. 6 people; flights ~€150 and accommodation ~€150 not included).
   - Recorded sessions library: €10/month, no commitment, over 100 recorded sessions.
   - Clothing: second-hand pieces, each one unique; orders open from time to time (waitlist).
+  - Cancellation policies (full text in `termos.html` / `en/terms.html`, summaries in each service FAQ):
+    counselling: refund or reschedule >24h, <24h or no-show counts as done; packages valid 6 months, unused sessions refunded (used ones at €40).
+    trips: €150 deposit (refunded if trip doesn't happen); participant cancels >60 days: refund minus deposit; 60–30 days: 50%; <30 days: none unless spot is taken.
+    celebrations: 30% deposit; >15 days: refund minus deposit; <15 days: none. schools/trainings: reschedule with 7 days' notice.
   - Contact: marianafonseca.97@gmail.com · Instagram @soulfulcycles · trips WhatsApp group.
 
 ## Services connected to the site
