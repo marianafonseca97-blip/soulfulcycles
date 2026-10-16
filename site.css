@@ -343,3 +343,4 @@ figure.zoomable{cursor:zoom-in}
 .price-note{margin-top:14px;font-size:.92rem}
 .about-text ul{margin:8px 0 14px;padding-left:22px;color:var(--muted);display:grid;gap:6px}
 .hero + section.tight{padding-top:24px}
+.about-text.wide{max-width:70ch}.about-text.wide p{text-wrap:pretty}
