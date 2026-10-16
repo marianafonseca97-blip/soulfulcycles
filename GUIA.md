@@ -99,7 +99,7 @@ Para acrescentar uma fotografia sem agente: no GitHub, clica em **Add file → U
 
 ## 6. Testemunhos
 
-- São sempre **anónimos**: só o tipo de pessoa e o serviço (por exemplo "Cliente · Sessão individual").
+- São sempre **anónimos**: só o tipo de pessoa e o serviço (por exemplo "Cliente · Sessão de aconselhamento").
 - Cada página de serviço tem todos os testemunhos desse serviço.
 - A página inicial tem uma seleção de **8**, um por serviço. Se acrescentares um muito bom, podes trocar um desses.
 

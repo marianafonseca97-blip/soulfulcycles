@@ -66,8 +66,8 @@ when those cards change.
 ## Content rules
 
 - **Never invent facts** (prices, dates, durations, places, who can join, what is included). Ask Mariana.
-- **Testimonials are anonymous.** Only a role and service, e.g. "Cliente · Sessão individual" /
-  "Client · Individual session". Never add names. Light punctuation fixes only; keep the person's words.
+- **Testimonials are anonymous.** Only a role and service, e.g. "Cliente · Sessão de aconselhamento" /
+  "Client · Counselling session". Never add names. Light punctuation fixes only; keep the person's words.
   The homepage carousel has a curated selection (one per service, currently 8); each service page shows
   all testimonials for that service.
 - Photos that show other people's faces: check with Mariana that they agreed.
