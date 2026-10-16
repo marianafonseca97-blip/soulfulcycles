@@ -74,7 +74,7 @@ when those cards change.
 - **Current facts** (update this list when they change):
   - Schools: €40 per hour, sessions of at least 1h30, single session or a series per class,
     from primary school to university, anonymous form for students' questions.
-  - Counselling: online, individuals or couples, 1h–1h30, from €40 per session, packages available.
+  - Counselling: online via Google Meet, individuals or couples, 1h–1h30 (depends on the session). Individual €40, couple €60; individual packages: 2 for €75, 3 for €110, 4 for €140. Paid when booking, by MB WAY, Revolut or bank transfer; free rescheduling up to 24h before.
   - Next trip: Dublin, March 2027, 4 days, exact dates set together with the group, €150 deposit to secure a spot, refunded if the trip does not go ahead, €375 (min. 3, max. 6 people; flights ~€150 and accommodation ~€150 not included).
   - Recorded sessions library: €10/month, no commitment, over 100 recorded sessions.
   - Clothing: second-hand pieces, each one unique; orders open from time to time (waitlist).
