@@ -33,6 +33,7 @@ O site não depende de nenhuma conta do Claude. Se nunca mais mexeres em nada, c
 | Podcast e entrevistas | /podcast-e-entrevistas | /en/podcast-and-interviews |
 | Recomendações | /recomendacoes | /en/recommendations |
 | Política de privacidade | /privacidade | /en/privacy |
+| Termos e condições da subscrição | /termos | /en/terms |
 
 > ⚠️ **O mais importante:** cada texto existe **duas vezes**, uma em português e outra em inglês.
 > Quando mudares alguma coisa (um preço, uma data, uma fotografia), lembra-te da versão inglesa.
@@ -46,7 +47,8 @@ O site não depende de nenhuma conta do Claude. Se nunca mais mexeres em nada, c
 | Preço das escolas (40 €/hora, mínimo 1h30) | Escolas (PT e EN), cartão na página inicial (PT e EN), página de erro |
 | Preço do aconselhamento (a partir de 40 €) | Aconselhamento (PT e EN), cartão na página inicial (PT e EN), página de erro |
 | Próxima viagem (Dublin, março 2027, 375 €) | Viagens (PT e EN), cartão na página inicial (PT e EN), página de erro |
-| Preço da biblioteca (10 €/mês) | Sessões gravadas (PT e EN), cartão e perguntas frequentes da página inicial (PT e EN), página de erro |
+| Preço da biblioteca (10 €/mês) | Sessões gravadas (PT e EN), cartão e perguntas frequentes da página inicial (PT e EN), página de erro, termos e condições (PT e EN) e no Stripe (produto e link de pagamento) |
+| Prazo para dar acesso ao Drive (48 horas) | Perguntas frequentes das Sessões gravadas e da página inicial, termos e condições (PT e EN) e mensagem de confirmação no Stripe |
 | Email e Instagram | Secção de contacto de quase todas as páginas |
 
 ---
@@ -110,11 +112,23 @@ Para acrescentar uma fotografia sem agente: no GitHub, clica em **Add file → U
 | **Cloudflare** | Publica o site e gere para onde aponta o domínio | dash.cloudflare.com |
 | **Dominios.pt** | Registo do domínio (renovação anual) | dominios.pt |
 | **GitHub** | Guarda o código | github.com |
+| **Stripe** | Recebe os pagamentos da subscrição da Biblioteca de Sessões Gravadas (10 €/mês) e transfere-os para o BPI | dashboard.stripe.com |
 | **Web3Forms** | Envia para o teu email as mensagens do formulário e da lista de espera | web3forms.com |
 | **GoatCounter** | Estatísticas de visitas, sem cookies | marianafonseca.goatcounter.com |
 | **Google Search Console** | Como o site aparece no Google | search.google.com/search-console |
 
 Se um dia acrescentares uma ferramenta nova que recolha dados (por exemplo uma newsletter ou um sistema de marcações), atualiza a **política de privacidade** em português e em inglês.
+
+---
+
+## 7b. Subscrições da Biblioteca de Sessões Gravadas
+
+- O botão **"Subscrever por 10€/mês"** (página das Sessões Gravadas) leva a um link de pagamento do Stripe.
+- Quando alguém subscreve, vês no Stripe, em **Clientes**, o **"Email Google (Gmail) para acesso ao Drive"** que a pessoa escreveu.
+- Em até **48 horas**, partilha a pasta das sessões no Google Drive com esse email, como **Leitor**.
+- Quem quiser cancelar faz isso sozinho no link **"Gerir ou cancelar a subscrição"** (portal do cliente do Stripe). Mantém o acesso até ao fim do mês pago; quando o Stripe te avisar do cancelamento, tira-lhe o acesso ao Drive.
+- O GoatCounter conta os cliques no botão de subscrever (aparecem como `subscrever-topo-pt`, `subscrever-preco-pt`, etc.).
+- Se mudares o preço, muda-o no Stripe **e** no site (ver tabela do ponto 2).
 
 ---
 
