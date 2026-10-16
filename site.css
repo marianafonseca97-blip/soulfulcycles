@@ -345,3 +345,4 @@ figure.zoomable{cursor:zoom-in}
 .hero + section.tight{padding-top:24px}
 .about-text.wide{max-width:70ch}.about-text.wide p{text-wrap:pretty}
 .boxes{display:grid;gap:32px}.boxes .trip-box>h3:first-child{margin-top:0}
+.svc-extra{margin:28px 0 0;color:var(--muted);font-size:1.05rem}.svc-extra a{color:var(--accent);font-weight:500}
