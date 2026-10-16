@@ -344,3 +344,5 @@ figure.zoomable{cursor:zoom-in}
 .about-text ul{margin:8px 0 14px;padding-left:22px;color:var(--muted);display:grid;gap:6px}
 .hero + section.tight{padding-top:24px}
 .about-text.wide{max-width:70ch}.about-text.wide p{text-wrap:pretty}
+.boxes{display:grid;gap:20px}.boxes .trip-box>h3:first-child{margin-top:0}
+.trip.middle{align-items:center}
