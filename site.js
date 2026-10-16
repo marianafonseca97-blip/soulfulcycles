@@ -45,7 +45,7 @@ document.querySelectorAll('form[data-web3]').forEach(function (form) {
     var en = document.documentElement.lang === 'en';
     var msg = form.querySelector('.form-msg'), btn = form.querySelector('button[type=submit]');
     var ok = form.name === 'contacto'
-      ? (en ? 'Thank you! I got your message and will reply soon.' : 'Obrigada! Recebi a tua mensagem e respondo em breve.')
+      ? (en ? 'Thank you! I got your message and will usually reply within 48 hours.' : 'Obrigada! Recebi a tua mensagem e respondo normalmente em 48 horas.')
       : (en ? "Thank you! I'll let you know when orders open." : 'Obrigada! Vou avisar-te quando abrirem as encomendas.');
     btn.disabled = true;
     fetch(form.action, { method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(form) })
