@@ -363,3 +363,4 @@ figure.zoomable{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 .svc-group{font:500 .78rem/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent);padding:34px 4px 12px;border-bottom:1px solid var(--line)}
 .svc-group:first-child{padding-top:4px}
 @media (min-width:761px){.svc summary,.svc-row{padding:15px 4px;row-gap:4px}.svc summary h3,.svc-row h3{font-size:1.5rem}.svc-arrow{width:42px;height:42px}.svc-group{padding:26px 4px 10px}.svc-group:first-child{padding-top:2px}}
+.about .press-bar{margin-top:22px}
