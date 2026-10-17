@@ -367,3 +367,5 @@ figure.zoomable{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 .svc-list > :last-child{border-bottom:0}
 @media (min-width:761px){.home-hero{padding-top:72px}}
 .clients{margin-top:28px;font:500 .78rem/1.8 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.clients span{color:var(--accent);margin-right:6px}
+.hero .clients{margin-top:18px}
+.clients a{color:inherit;text-decoration:underline;text-underline-offset:3px}.clients a:hover{color:var(--accent)}
