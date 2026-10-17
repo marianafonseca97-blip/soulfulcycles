@@ -162,3 +162,33 @@ document.querySelectorAll('form[data-web3]').forEach(function (form) {
     });
   });
 })();
+
+// Testimonial grids on service pages: long quotes take two columns and rows are filled evenly (3 columns on wide screens)
+document.querySelectorAll('.quotes.all').forEach(function (grid) {
+  var items = Array.prototype.slice.call(grid.querySelectorAll(':scope > blockquote'));
+  var n = items.length;
+  if (n < 3) return;
+  var len = function (b) { return b.textContent.trim().length; };
+  items.sort(function (a, b) { return len(b) - len(a); });
+  var longCount = items.filter(function (b) { return len(b) > 380; }).length;
+  var w = -1;
+  for (var k = 0; k <= Math.floor(n / 2); k++) {
+    if ((n + k) % 3 === 0 && (w < 0 || Math.abs(k - longCount) < Math.abs(w - longCount))) w = k;
+  }
+  if (w < 0) w = 0;
+  var wide = items.slice(0, w), singles = items.slice(w), order = [];
+  wide.forEach(function (b) { b.classList.add('wide'); order.push(b, singles.pop()); });
+  order = order.concat(singles);
+  order.forEach(function (b) { grid.appendChild(b); });
+  // mosaic: each card spans as many 4px rows as its height needs, so cards fit together without gaps
+  var mq = window.matchMedia('(min-width: 900px)');
+  function fit() {
+    items.forEach(function (b) { b.style.gridRowEnd = ''; });
+    if (!mq.matches) return;
+    items.forEach(function (b) { b.style.gridRowEnd = 'span ' + Math.ceil((b.getBoundingClientRect().height + 20) / 4); });
+  }
+  fit();
+  window.addEventListener('resize', fit);
+  window.addEventListener('load', fit);
+  if (document.fonts) document.fonts.ready.then(fit);
+});
