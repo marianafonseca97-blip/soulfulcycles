@@ -207,4 +207,4 @@ nav.open .menu-btn span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)
 }
 .brandmark{display:block;aspect-ratio:1027/192;background:var(--accent);-webkit-mask:url(/soulful-cycles-nome.png) no-repeat center/contain;mask:url(/soulful-cycles-nome.png) no-repeat center/contain}
 footer.site .brandmark{width:110px;margin-bottom:10px}
-.brandmark.about-mark{width:130px;margin:48px 0 12px}
+.brandmark.about-mark{width:145px;margin:48px 0 12px}
