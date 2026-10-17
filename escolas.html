@@ -91,6 +91,7 @@
         <p class="label" data-i="es.howl">Como funciona</p>
         <ul class="checklist">
           <li data-i="es.h1">Do ensino básico à universidade, adaptado à idade e ao que a turma precisa</li>
+          <li>Em Lisboa e noutras zonas do país, com a deslocação paga pela escola</li>
           <li data-i="es.h2">Uma única sessão ou, idealmente, um conjunto de sessões com a mesma turma</li>
           <li data-i="es.h5">Cada sessão dura, no mínimo, 1 hora e meia</li>
           <li data-i="es.h3">Antes da sessão, falo com quem me convida para preparar tudo à medida</li>
@@ -149,6 +150,7 @@
     <div class="sec-head"><p class="label" data-i="faq.label">Perguntas frequentes</p><h2 data-i="es.faqh">Para professores e escolas</h2></div>
     <div class="faq">
       <details><summary data-i="faq.q3">Com que idades trabalhas nas escolas?</summary><p class="muted" data-i="faq.a3">Desde o 1.º ciclo até à faculdade. Adapto cada sessão à idade e ao que a turma precisa. Antes da sessão, falo com quem me convida para preparar tudo à medida.</p></details>
+      <details><summary>Também vais a escolas fora de Lisboa?</summary><p class="muted">Sim. Vou a escolas noutras zonas do país, com a deslocação paga pela escola. Conta-me onde fica e incluo a deslocação na proposta.</p></details>
       <details><summary data-i="es.q1">Pode ser mais do que uma sessão por turma?</summary><p class="muted" data-i="es.a1">Sim, e é o que eu sugiro. Pode ser uma única sessão, mas recomendo um conjunto de sessões com a mesma turma, para aprofundar os temas com mais calma.</p></details>
       <details><summary data-i="es.q2">Quanto custa?</summary><p class="muted" data-i="es.a2">40€ por hora. Cada sessão dura, no mínimo, 1 hora e meia.</p></details>
       <details><summary data-i="es.q3">Os temas são escolhidos pela escola?</summary><p class="muted" data-i="es.a3">Combinamos juntos. Antes da sessão, falo contigo para perceber o que a turma precisa, e os alunos podem enviar, num formulário anónimo, as perguntas e os temas que querem ver abordados.</p></details>
@@ -174,14 +176,15 @@
       <input type="checkbox" name="botcheck" hidden tabindex="-1" autocomplete="off">
       <label><span data-i="cf.name">Nome</span><input type="text" name="nome" required autocomplete="name"></label>
       <label><span data-i="cf.email">Email</span><input type="email" name="email" required autocomplete="email"></label>
+      <label><span>Organização (opcional)</span><input type="text" name="organizacao" autocomplete="organization"></label>
       <label><span data-i="cf.topic">Assunto</span>
         <select name="assunto">
-          <option value="Escolas e faculdades" selected data-i="cf.o1">Sessões em escolas e faculdades</option>
           <option value="Aconselhamento online" data-i="cf.o2">Aconselhamento online</option>
-          <option value="Viagens" data-i="cf.o3">Viagens</option>
           <option value="Festas" data-i="cf.o4">Despedidas, aniversários e outras celebrações</option>
-          <option value="Formações" data-i="cf.o5">Formações</option>
+          <option value="Viagens" data-i="cf.o3">Viagens</option>
           <option value="Biblioteca de sessões" data-i="cf.o6">Biblioteca de Sessões Gravadas</option>
+          <option value="Escolas e faculdades" selected data-i="cf.o1">Sessões em escolas e faculdades</option>
+          <option value="Formações" data-i="cf.o5">Formações</option>
           <option value="Empresas e teambuilding">Empresas e teambuilding</option>
           <option value="Outro" data-i="cf.o7">Outro assunto</option>
         </select>

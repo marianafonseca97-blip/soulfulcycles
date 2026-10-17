@@ -91,6 +91,7 @@
         <p class="label" data-i="es.howl">How it works</p>
         <ul class="checklist">
           <li data-i="es.h1">From primary school to university, adapted to the age group and to what the class needs</li>
+          <li>In Lisbon and elsewhere in Portugal, with travel costs covered by the school</li>
           <li data-i="es.h2">A single session or, ideally, a series of sessions with the same class</li>
           <li data-i="es.h5">Each session lasts at least an hour and a half</li>
           <li data-i="es.h3">Before the session, I talk with whoever invites me so everything is tailored</li>
@@ -149,6 +150,7 @@
     <div class="sec-head"><p class="label" data-i="faq.label">FAQ</p><h2 data-i="es.faqh">For teachers and schools</h2></div>
     <div class="faq">
       <details><summary data-i="faq.q3">What ages do you work with in schools?</summary><p class="muted" data-i="faq.a3">From primary school to university. I adapt each session to the age group and to what the class needs. Before the session, I talk with whoever invites me so everything is tailored.</p></details>
+      <details><summary>Do you also go to schools outside Lisbon?</summary><p class="muted">Yes. I go to schools elsewhere in Portugal, with travel costs covered by the school. Tell me where you are and I will include travel in the proposal.</p></details>
       <details><summary data-i="es.q1">Can there be more than one session per class?</summary><p class="muted" data-i="es.a1">Yes, and that is what I suggest. It can be a single session, but I recommend a series of sessions with the same class, to explore the topics in more depth.</p></details>
       <details><summary data-i="es.q2">How much does it cost?</summary><p class="muted" data-i="es.a2">€40 per hour. Each session lasts at least an hour and a half.</p></details>
       <details><summary data-i="es.q3">Does the school choose the topics?</summary><p class="muted" data-i="es.a3">We decide together. Before the session, I talk with you to understand what the class needs, and students can send the questions and topics they want covered through an anonymous form.</p></details>
@@ -174,14 +176,15 @@
       <input type="checkbox" name="botcheck" hidden tabindex="-1" autocomplete="off">
       <label><span data-i="cf.name">Name</span><input type="text" name="nome" required autocomplete="name"></label>
       <label><span data-i="cf.email">Email</span><input type="email" name="email" required autocomplete="email"></label>
+      <label><span>Organisation (optional)</span><input type="text" name="organizacao" autocomplete="organization"></label>
       <label><span data-i="cf.topic">Subject</span>
         <select name="assunto">
-          <option value="Escolas e faculdades" selected data-i="cf.o1">School &amp; university sessions</option>
           <option value="Aconselhamento online" data-i="cf.o2">Online counselling</option>
-          <option value="Viagens" data-i="cf.o3">Trips</option>
           <option value="Festas" data-i="cf.o4">Hen parties, birthdays &amp; other celebrations</option>
-          <option value="Formações" data-i="cf.o5">Trainings</option>
+          <option value="Viagens" data-i="cf.o3">Trips</option>
           <option value="Biblioteca de sessões" data-i="cf.o6">Recorded Sessions Library</option>
+          <option value="Escolas e faculdades" selected data-i="cf.o1">School &amp; university sessions</option>
+          <option value="Formações" data-i="cf.o5">Trainings</option>
           <option value="Empresas e teambuilding">Companies &amp; team building</option>
           <option value="Outro" data-i="cf.o7">Something else</option>
         </select>
