@@ -141,7 +141,7 @@ document.querySelectorAll('form[data-web3]').forEach(function (form) {
   });
 })();
 
-// Trip banner: little sparkles behind the plane cursor (mouse only, off for reduced motion)
+// Trip banner: soft pink contrail behind the plane cursor (mouse only, off for reduced motion)
 (function () {
   if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   document.querySelectorAll('.trip-banner').forEach(function (b) {
@@ -149,19 +149,16 @@ document.querySelectorAll('form[data-web3]').forEach(function (form) {
     b.addEventListener('pointermove', function (e) {
       if (e.pointerType !== 'mouse') return;
       var now = Date.now();
-      if (now - last < 70) return;
+      if (now - last < 18) return;
       last = now;
       var r = b.getBoundingClientRect();
       var s = document.createElement('span');
-      s.className = 'spark';
-      s.textContent = '✦';
+      s.className = 'trail';
       s.setAttribute('aria-hidden', 'true');
-      s.style.left = (e.clientX - r.left - 12 + Math.random() * 8) + 'px';
-      s.style.top = (e.clientY - r.top + 6 + Math.random() * 8) + 'px';
-      s.style.fontSize = (8 + Math.random() * 7) + 'px';
-      if (Math.random() < .5) s.style.color = '#FFC9D9';
+      s.style.left = (e.clientX - r.left - 10) + 'px';
+      s.style.top = (e.clientY - r.top + 10) + 'px';
       b.appendChild(s);
-      setTimeout(function () { s.remove(); }, 800);
+      setTimeout(function () { s.remove(); }, 700);
     });
   });
 })();
