@@ -364,3 +364,4 @@ figure.zoomable{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 .svc-group:first-child{padding-top:4px}
 @media (min-width:761px){.svc summary,.svc-row{padding:15px 4px;row-gap:4px}.svc summary h3,.svc-row h3{font-size:1.5rem}.svc-arrow{width:42px;height:42px}.svc-group{padding:26px 4px 10px}.svc-group:first-child{padding-top:2px}}
 .about .press-bar{margin-top:22px}
+.svc-list > :last-child{border-bottom:0}
