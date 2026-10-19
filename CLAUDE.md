@@ -27,6 +27,7 @@ from an old translation system: harmless, leave them, they do nothing now.
 | About | `sobre-mim.html` | `en/about.html` |
 | Podcast & interviews (podcast, press, interviews) | `podcast-e-entrevistas.html` | `en/podcast-and-interviews.html` |
 | Recommendations | `recomendacoes.html` | `en/recommendations.html` |
+| "True or myth?" games (4 quizzes; content and logic in `jogos.js`, anonymous results as GoatCounter events `jogo/<quiz>/…`) | `jogos.html` | `en/games.html` |
 | Privacy policy | `privacidade.html` | `en/privacy.html` |
 | Terms and conditions (all services: booking, payment, cancellation) | `termos.html` | `en/terms.html` |
 | Error page (PT only) | `404.html` | — |

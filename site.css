@@ -370,3 +370,35 @@ figure.zoomable{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 .clients a{color:inherit;text-decoration:underline;text-underline-offset:3px}.clients a:hover{color:var(--accent)}
 section:has(> .faq),section:has(> .svc-list){border-bottom:0}
 @media (min-width:900px){.quotes.all{grid-template-columns:repeat(3,1fr);grid-auto-rows:4px;row-gap:0;grid-auto-flow:dense;align-items:start}.quotes.all .wide{grid-column:span 2}}
+.jg-hero{grid-template-columns:1fr;max-width:760px}
+.jg-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.jg-card{display:grid;gap:8px;align-content:start;text-align:left;font:inherit;color:var(--ink);background:var(--surface);border:1px solid transparent;border-radius:22px;padding:24px;cursor:pointer;transition:border-color .2s,transform .2s}
+.jg-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.jg-card b{font:400 1.5rem/1.2 var(--display)}
+.jg-card span:not(.label){color:var(--muted)}
+.jg-card .jg-play{color:var(--accent)!important;font-weight:600;margin-top:6px}
+.jg-box{max-width:720px;background:var(--surface);border-radius:22px;padding:32px;display:grid;gap:18px}
+.jg-bar{height:6px;border-radius:99px;background:var(--line);overflow:hidden}
+.jg-bar span{display:block;height:100%;background:var(--accent);transition:width .3s}
+.jg-q{font:400 clamp(1.4rem,3vw,1.9rem)/1.3 var(--display);margin:0}
+.jg-btns{display:flex;gap:12px;flex-wrap:wrap}
+.jg-btns .btn{min-width:130px}
+.jg-btns .btn:disabled{opacity:.45;cursor:default}
+.jg-btns .btn.jg-correct{opacity:1;outline:3px solid var(--accent);outline-offset:3px}
+.jg-fb:empty{display:none}
+.jg-fb{border-left:4px solid var(--accent);padding:4px 0 4px 18px;display:grid;gap:10px}
+.jg-fb p{margin:0}
+.jg-fb .btn{justify-self:start;margin-top:6px}
+.jg-verdict{font-weight:600}
+.jg-fb.ok .jg-verdict{color:var(--warm)}
+.jg-fb.no .jg-verdict{color:var(--accent)}
+.jg-score{font:400 clamp(1.8rem,4vw,2.6rem)/1.2 var(--display);margin:0}
+.jg-score b{color:var(--accent);font-weight:400}
+.jg-level{font-size:1.15rem;margin:0}
+.jg-box h3{margin:8px 0 0}
+.jg-wrong{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.jg-wrong li{background:var(--bg);border-radius:14px;padding:16px 18px}
+.jg-wrong p{margin:0}
+.jg-q-small{font-family:var(--display);font-size:1.15rem;margin-bottom:6px!important}
+.jg-share{color:var(--accent);font-weight:600}
+@media (max-width:760px){.jg-box{padding:22px}}
