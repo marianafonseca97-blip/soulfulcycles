@@ -402,3 +402,8 @@ section:has(> .faq),section:has(> .svc-list){border-bottom:0}
 .jg-q-small{font-family:var(--display);font-size:1.15rem;margin-bottom:6px!important}
 .jg-share{color:var(--accent);font-weight:600}
 @media (max-width:760px){.jg-box{padding:22px}}
+.game-banner{display:grid;gap:10px;justify-items:start;background:var(--surface);border-radius:22px;padding:36px 32px;color:var(--ink);text-decoration:none;max-width:760px;transition:transform .2s}
+.game-banner:hover{transform:translateY(-2px)}
+.game-banner b{font:400 clamp(1.6rem,3.4vw,2.2rem)/1.2 var(--display)}
+.game-banner .gb-text{color:var(--muted);max-width:56ch}
+.game-banner .btn{margin-top:8px}

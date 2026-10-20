@@ -81,6 +81,11 @@ footer.site a{color:inherit}
 .jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px;max-width:470px}
 .jump a{font:500 .72rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:var(--surface)}
 .jump a:hover{border-color:var(--accent);color:var(--accent)}
+.game-cta{display:grid;gap:4px;justify-self:start;margin-top:14px;padding:16px 20px;border:1.5px solid var(--accent);border-radius:18px;background:var(--surface);color:var(--ink);text-decoration:none;transition:transform .2s}
+.game-cta:hover{transform:translateY(-2px)}
+.game-cta .gc-label{font:500 .72rem/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+.game-cta b{font:400 1.35rem/1.25 var(--display)}
+.game-cta span:last-child{color:var(--muted);font-size:.95rem}
 section[id]{scroll-margin-top:80px}
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -124,6 +129,7 @@ html{scroll-behavior:smooth}
     <h1 data-i="h.h1">Coisas que adoro e com que aprendo</h1>
     <p class="muted" data-i="h.p">O que estou sempre a recomendar a amigas, clientes e a quem tenha curiosidade sobre sexualidade, relações, saúde mental, feminismo e vidas queer.</p>
     <div class="jump" role="navigation" aria-label="Ir para a secção"><a href="#livros">Livros</a><a href="#criancas">Crianças</a><a href="#series">Séries</a><a href="#filmes">Filmes</a><a href="#documentarios">Documentários</a><a href="#podcasts">Podcasts</a><a href="#videos">Vídeos</a><a href="#websites">Websites</a><a href="#produtos">Produtos</a></div>
+    <a class="game-cta" href="/jogos"><span class="gc-label">Jogos</span><b>Testa o que sabes: Verdade ou mito?</b><span>Ciclo menstrual, anatomia, consentimento e comunidade LGBTQIA+ →</span></a>
   </header>
 
   <section id="livros">
