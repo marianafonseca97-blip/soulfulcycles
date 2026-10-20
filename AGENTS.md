@@ -27,6 +27,7 @@ from an old translation system: harmless, leave them, they do nothing now.
 | About | `sobre-mim.html` | `en/about.html` |
 | Podcast & interviews (podcast, press, interviews) | `podcast-e-entrevistas.html` | `en/podcast-and-interviews.html` |
 | Recommendations | `recomendacoes.html` | `en/recommendations.html` |
+| "True or myth?" games (4 quizzes; content and logic in `jogos.js`, anonymous results as GoatCounter events `jogo/<quiz>/…`) | `jogos.html` | `en/games.html` |
 | Privacy policy | `privacidade.html` | `en/privacy.html` |
 | Terms and conditions (all services: booking, payment, cancellation) | `termos.html` | `en/terms.html` |
 | Error page (PT only) | `404.html` | — |
@@ -73,9 +74,11 @@ when those cards change.
 - Photos that show other people's faces: check with Mariana that they agreed.
 - **Current facts** (update this list when they change):
   - Schools: €40 per hour, sessions of at least 1h30, single session or a series per class,
-    from primary school to university, anonymous form for students' questions.
-  - Counselling: online via Google Meet, individuals or couples, 1h–1h30 (depends on the session). Individual €40, couple €60; individual packages: 2 for €75, 3 for €110, 4 for €140. Paid when booking, by MB WAY, Revolut or bank transfer; free rescheduling up to 24h before.
+    from primary school to university, anonymous form for students' questions. Also travels to schools elsewhere in Portugal, travel paid by the school.
+  - Counselling: for people of any gender, online via Google Meet, individuals or couples, 1h–1h30 (depends on the session). Individual €40, couple €60; individual packages: 2 for €75, 3 for €110, 4 for €140. Paid when booking, by MB WAY, Revolut or bank transfer; free rescheduling up to 24h before.
   - Next trip: Dublin, March 2027, 4 days, exact dates set together with the group, €150 deposit to secure a spot, refunded if the trip does not go ahead, €375 (min. 3, max. 6 people; flights ~€150 and accommodation ~€150 not included).
+  - When the next trip changes, update it everywhere: homepage banner (`.trip-banner`), homepage and `404.html` services list (trips label "Próxima: Dublin" and description), `viagens.html` / `en/trips.html` (hero, Dublin section, meta description), and the English versions.
+  - Trainings: for Erasmus+ projects and teams in schools, health services, associations and companies; fee per training day, agreed per project.
   - Recorded sessions library: €10/month, no commitment, over 100 recorded sessions.
   - Clothing: second-hand pieces, each one unique; orders open from time to time (waitlist).
   - Cancellation policies (full text in `termos.html` / `en/terms.html`, summaries in each service FAQ):

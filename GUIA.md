@@ -34,6 +34,7 @@ O site não depende de nenhuma conta do Claude. Se nunca mais mexeres em nada, c
 | Recomendações | /recomendacoes | /en/recommendations |
 | Política de privacidade | /privacidade | /en/privacy |
 | Termos e condições (marcação, pagamento e cancelamento de todos os serviços) | /termos | /en/terms |
+| Jogos "Verdade ou mito?" (ciclo menstrual, anatomia, consentimento, LGBTQIA+) | /jogos | /en/games |
 
 > ⚠️ **O mais importante:** cada texto existe **duas vezes**, uma em português e outra em inglês.
 > Quando mudares alguma coisa (um preço, uma data, uma fotografia), lembra-te da versão inglesa.
@@ -46,10 +47,11 @@ O site não depende de nenhuma conta do Claude. Se nunca mais mexeres em nada, c
 |---|---|
 | Preço das escolas (40 €/hora, mínimo 1h30) | Escolas (PT e EN), cartão na página inicial (PT e EN), página de erro |
 | Preço do aconselhamento (a partir de 40 €) | Aconselhamento (PT e EN), cartão na página inicial (PT e EN), página de erro |
-| Próxima viagem (Dublin, março 2027, 375 €) | Viagens (PT e EN), cartão na página inicial (PT e EN), página de erro |
+| Próxima viagem (Dublin, março 2027, 375 €) | Viagens (PT e EN), banner de Dublin e lista de serviços da página inicial (PT e EN, incluindo o título pequeno "Próxima: Dublin"), página de erro |
 | Preço da biblioteca (10 €/mês) | Sessões gravadas (PT e EN), cartão e perguntas frequentes da página inicial (PT e EN), página de erro, termos e condições (PT e EN) e no Stripe (produto e link de pagamento) |
 | Prazo para dar acesso ao Drive (48 horas) | Perguntas frequentes das Sessões gravadas e da página inicial, termos e condições (PT e EN) e mensagem de confirmação no Stripe |
 | Email e Instagram | Secção de contacto de quase todas as páginas |
+| Afirmações e explicações dos jogos | Ficheiro `jogos.js` (português e inglês no mesmo ficheiro). Os resultados anónimos aparecem no GoatCounter, nas entradas que começam por "jogo/" |
 
 ---
 
