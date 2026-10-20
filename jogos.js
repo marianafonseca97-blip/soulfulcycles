@@ -48,7 +48,7 @@ var JOGOS = {
         { t: 'Uma pessoa muito alcoolizada ou inconsciente não consegue dar consentimento.', a: true, e: 'Para consentir é preciso estar consciente e em condições de decidir livremente.' },
         { t: 'Insistir até a pessoa ceder também conta como consentimento.', a: false, e: 'Um "sim" obtido à força de pressão não é um "sim" livre, por isso não é consentimento.' },
         { t: 'Ficar em silêncio ou paralisado pode ser uma reação ao medo, e não é consentimento.', a: true, e: 'Perante o medo, muitas pessoas ficam bloqueadas, sem conseguir reagir. Silêncio não é "sim".' },
-        { t: 'Partilhar fotos íntimas de alguém sem autorização é uma violação do consentimento.', a: true, e: 'Ter recebido uma foto não dá autorização para a mostrar ou reencaminhar. Partilhar sem consentimento causa muitos danos e pode ser crime.' },
+        { t: 'Partilhar fotos íntimas de alguém sem autorização é uma violação do consentimento.', a: true, e: 'Ter recebido uma foto não dá autorização para a mostrar ou reencaminhar. Partilhar sem consentimento causa muitos danos e, em Portugal, é crime.' },
         { t: 'Tirar o preservativo a meio sem a outra pessoa saber é aceitável, se ela consentiu a relação.', a: false, e: 'A pessoa consentiu uma relação com preservativo. Tirá-lo sem ela saber é uma violação do consentimento.' },
         { t: 'Perguntar "queres?" estraga sempre o clima.', a: false, e: 'Perguntar pode ser íntimo e até excitante, e mostra cuidado. Há muitas formas de o fazer de forma natural.' }
       ]},
@@ -113,7 +113,7 @@ var JOGOS = {
         { t: 'Someone who is very drunk or unconscious cannot give consent.', a: true, e: 'To consent, a person needs to be conscious and able to decide freely.' },
         { t: 'Insisting until the other person gives in also counts as consent.', a: false, e: 'A "yes" obtained through pressure is not a free "yes", so it is not consent.' },
         { t: 'Staying silent or freezing can be a reaction to fear, and it is not consent.', a: true, e: 'When afraid, many people freeze and cannot react. Silence is not "yes".' },
-        { t: 'Sharing someone\'s intimate photos without permission is a violation of consent.', a: true, e: 'Receiving a photo does not give permission to show or forward it. Sharing without consent causes a lot of harm and can be a crime.' },
+        { t: 'Sharing someone\'s intimate photos without permission is a violation of consent.', a: true, e: 'Receiving a photo does not give permission to show or forward it. Sharing without consent causes a lot of harm and, in Portugal, it is a crime.' },
         { t: 'Removing a condom halfway without the other person knowing is acceptable if they consented to sex.', a: false, e: 'They consented to sex with a condom. Removing it without them knowing is a violation of consent.' },
         { t: 'Asking "do you want to?" always kills the mood.', a: false, e: 'Asking can be intimate and even exciting, and it shows care. There are many ways to do it naturally.' }
       ]},
