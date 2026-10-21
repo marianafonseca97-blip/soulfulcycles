@@ -18,7 +18,7 @@ var JOGOS = {
     quizzes: {
       ciclo: { title: 'Ciclo menstrual', items: [
         { t: 'Não é possível engravidar durante a menstruação.', a: false, e: 'É pouco provável, mas é possível, sobretudo em ciclos curtos: os espermatozoides podem sobreviver até cerca de 5 dias no corpo e a ovulação pode acontecer pouco depois da menstruação.' },
-        { t: 'Um ciclo menstrual "normal" tem sempre 28 dias.', a: false, e: '28 dias é só uma média. Em pessoas adultas, ciclos entre cerca de 21 e 35 dias são considerados dentro do esperado, e é normal variarem um pouco de mês para mês.' },
+        { t: 'Um ciclo menstrual "normal" tem 28 dias.', a: false, e: '28 dias é só uma média. Em pessoas adultas, ciclos entre cerca de 21 e 35 dias são considerados dentro do esperado, e é normal variarem um pouco de mês para mês.' },
         { t: 'Quem toma a pílula menstrua na pausa da pílula.', a: false, e: 'Na pausa da pílula há uma hemorragia de privação, causada pela descida das hormonas da pílula. Não há ovulação, por isso não é uma menstruação propriamente dita.' },
         { t: 'Dores menstruais tão fortes que impedem o dia a dia são normais e é só aguentar.', a: false, e: 'Algum desconforto é comum, mas dores que impedem de estudar, trabalhar ou dormir merecem atenção médica: podem ser sinal de condições como a endometriose.' },
         { t: 'Usar tampão ou copo menstrual faz perder a virgindade.', a: false, e: 'A virgindade não é um conceito médico e não se "perde" com um tampão ou um copo. O hímen é uma membrana elástica, diferente de pessoa para pessoa.' },
@@ -83,7 +83,7 @@ var JOGOS = {
     quizzes: {
       ciclo: { title: 'Menstrual cycle', items: [
         { t: 'You cannot get pregnant during your period.', a: false, e: 'It is unlikely, but possible, especially with short cycles: sperm can survive up to about 5 days in the body and ovulation can happen soon after a period.' },
-        { t: 'A "normal" menstrual cycle always lasts 28 days.', a: false, e: '28 days is just an average. In adults, cycles of roughly 21 to 35 days are within the expected range, and it is normal for them to vary a little from month to month.' },
+        { t: 'A "normal" menstrual cycle lasts 28 days.', a: false, e: '28 days is just an average. In adults, cycles of roughly 21 to 35 days are within the expected range, and it is normal for them to vary a little from month to month.' },
         { t: 'If you take the pill, you get your period during the pill break.', a: false, e: 'The bleeding during the pill break is a withdrawal bleed, caused by the drop in the pill\'s hormones. There is no ovulation, so it is not a real period.' },
         { t: 'Period pain so bad it stops you from going about your day is normal, you just have to put up with it.', a: false, e: 'Some discomfort is common, but pain that stops you studying, working or sleeping deserves medical attention: it can be a sign of conditions such as endometriosis.' },
         { t: 'Using a tampon or menstrual cup makes you lose your virginity.', a: false, e: 'Virginity is not a medical concept and is not "lost" with a tampon or a cup. The hymen is an elastic membrane that differs from person to person.' },
